@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "gaslands-garage-builder": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gaslands-garage-builder"
+    }
+  },
+  "defaultProject": "gaslands-garage-builder",
+  "cli": {
+    "analytics": "1bbdd86b-a43e-4914-8933-744a1a4534d7"
+  }
 }

@@ -1,0 +1,877 @@
+[
+  {
+    "id": 1,
+    "type": "Weapon",
+    "name": "125mm Cannon",
+    "effects": "A tank gun is a ridiculous weapon for a civilian vehicle to carry. When fired, the active vehicle immediately gains +2 hazard tokens if it is not a Tank.",
+    "book": "Core"
+  },
+  {
+    "id": 2,
+    "type": "Weapon",
+    "name": "Arc Lightning Projector",
+    "effects": "Requires access to Electrical Weapons. The Arc Lightning Projector is a dangerous electrical weapon that can arc electricity across multiple conductive targets. After damaging a target, this vehicle must immediately attack another target within short range and a 360° arc of fire of the current target. This chain-reaction continues until the weapon fails to damage a target, or there are no further viable targets. This vehicle can target friendly vehicles with the Arc Lightning Projector. This vehicle cannot target the same vehicle twice in a single attack step with the Arc Lightning Projector.",
+    "book": "Core"
+  },
+  {
+    "id": 3,
+    "type": "Weapon",
+    "name": "Atomize",
+    "effects": "If this weapon scores five or more un-cancelled hits on the target, instead of causing damage, the target car is immediately removed from play (although it counts as having been wrecked for the purposes of audience votes, scenario rules, etc.).",
+    "book": "TX2"
+  },
+  {
+    "id": 4,
+    "type": "Weapon",
+    "name": "Blast",
+    "effects": "For every un-cancelled hit caused by a weapon with the BLAST rule, the target immediately gains +1 hazard token.",
+    "book": "Core"
+  },
+  {
+    "id": 5,
+    "type": "Weapon",
+    "name": "Blitz",
+    "effects": "This weapon may have any number of crewmembers assigned to it during the attack step, and may attack once for each crewmember so assigned. If the weapon has ammo tokens, an ammo token mustbe discarded separately for each separate attack.",
+    "book": "Core"
+  },
+  {
+    "id": 6,
+    "type": "Weapon",
+    "name": "Caltrop Dropper",
+    "effects": "The burst template of this dropped weapon counts as a treacherous surface. If any part of a vehicle’s maneuver template or final position overlaps the caltrops burst template, that vehicle immediately loses 2 hull points and then that caltrops template is removed.",
+    "book": "Core"
+  },
+  {
+    "id": 7,
+    "type": "Weapon",
+    "name": "Choking Gas",
+    "effects": "If this weapon scores one or more un-cancelled hits on the target, instead of causing damage, reduce the target’s crew value by 1 for each un-cancelled hit, to a minimum of 0, until the end of the phase",
+    "book": "Core"
+  },
+  {
+    "id": 8,
+    "type": "Weapon",
+    "name": "Crew Fired",
+    "effects": "A weapon that is CREW FIRED benefits from a 360º arc of fire.",
+    "book": "TX2"
+  },
+  {
+    "id": 9,
+    "type": "Weapon",
+    "name": "Dumper",
+    "effects": "Dumper: This vehicle may fire the Wreck Lobber as a rear-mounted dropped weapon instead of using the Trebuchet rules above. In this case, the wreck of a car is placed touching the rear of the active vehicle, and no COLLISION WINDOW is triggered.",
+    "book": "Core"
+  },
+  {
+    "id": 10,
+    "type": "Weapon",
+    "name": "Electrical",
+    "effects": "Requires access to Electrical Weapons, currently only allowed to Mishkin.",
+    "book": "Core"
+  },
+  {
+    "id": 11,
+    "type": "Weapon",
+    "name": "Entangle",
+    "effects": "This weapon’s hits do not cause damage. Instead each un-cancelled hit adds 2 hazard tokens to the target vehicle.",
+    "book": "TX2"
+  },
+  {
+    "id": 12,
+    "type": "Weapon",
+    "name": "Exploding Ram",
+    "effects": "When involved in a collision on the declared facing, for the first time in a game, this vehicle must declare a smash attack (even if the collision is a tailgate) and this becomes an EXPLOSIVE SMASH ATTACK. When making this explosive smash attack this vehicle gains +6 attack dice. If any 1s or 2s are rolled on this vehicle’s attack dice during this explosive smash attack, this vehicle immediately loses one hull point for each 1 or 2 rolled. A vehicle may only purchase one explosive ram. Bikes may not purchase this weapon.",
+    "book": "Core"
+  },
+  {
+    "id": 13,
+    "type": "Weapon",
+    "name": "Explosive",
+    "effects": "During an activation in which the target vehicle suffered an un-cancelled hit from a weapon with this rule, the target vehicle gains +1 to any explosion check.",
+    "book": "Core"
+  },
+  {
+    "id": 14,
+    "type": "Weapon",
+    "name": "Fire",
+    "effects": "If a vehicle is attacked by a weapon with the FIRE special rule, and suffers at least one un-cancelled hit, it is set ON FIRE. A vehicle that is currently on fire cannot be set on fire a second time. When a vehicle that is on fire activates it immediately loses 1 hull point. If the vehicle ever has zero hazard tokens, the fire goes out and the vehicle is no longer on fire.",
+    "book": "Core"
+  },
+  {
+    "id": 15,
+    "type": "Weapon",
+    "name": "Glue Dropper",
+    "effects": "The dropped weapon template for the glue dropper counts as a treacherous surface. Any vehicle that either starts its activation touching the template, or whose maneuver template or final position overlaps the dropped weapon template during its activation, reduces its current gear by 2 at the end of their activation.",
+    "book": "Core"
+  },
+  {
+    "id": 16,
+    "type": "Weapon",
+    "name": "Gravity Manipulation",
+    "effects": "If this weapon scores one or more un-cancelled hits on the target, instead of causing damage, the attacking vehicle’s controller must choose one of the following: until the end of the target’s next activation the target counts as one weight class heavier; or until the end of the target’s next activation the target counts as one weight class lighter.",
+    "book": "TX2"
+  },
+  {
+    "id": 17,
+    "type": "Weapon",
+    "name": "Harpoon",
+    "effects": "This weapon’s hits do not cause damage. Instead, the first un-cancelled hit on the target spins the target vehicle on the spot to either face directly away from or directly towards the attacking vehicle, whichever requires the smallest degree of rotation, as the harpoon catches and the chain goes taut. This triggers a COLLISION WINDOW.\nThe second and subsequent un-cancelled hits on the target then each move the target a short straight towards the attacker, triggering a COLLISION WINDOW, as the harpoon reels the target in.\nIf the target is a heavier weight class than the attacker, it is the attacking vehicle that is spun and moved towards the target vehicle instead.",
+    "book": "Core"
+  },
+  {
+    "id": 18,
+    "type": "Weapon",
+    "name": "Heat-seeking",
+    "effects": "This weapon may target any in-play vehicle. After assigning crew, spending ammo tokens, and declaring a target, roll a D6. If this roll is over the target vehicle’s current gear, the target is considered to be in range and line of sight, and may not benefit from cover. Roll to hit as normal.",
+    "book": "TX2"
+  },
+  {
+    "id": 19,
+    "type": "Weapon",
+    "name": "Highly Explosive",
+    "effects": "During an activation in which the target vehicle suffered an un-cancelled hit from a weapon with this rule, the target vehicle gains +2 to any explosion check.",
+    "book": "TX2"
+  },
+  {
+    "id": 20,
+    "type": "Weapon",
+    "name": "Kinetic Super Booster",
+    "effects": "Requires access to Electrical Weapons. The Kinetic Super Booster is a bizarre electrical weapon that transfers a jolt of kinetic energy to the target. The target of a Super Booster attack suffers no damage, but instead immediately increases its current gear by one for every successful hit, without gaining hazard tokens. The Super Booster may not increase a vehicle’s current gear beyond its max gear.",
+    "book": "TX2"
+  },
+  {
+    "id": 21,
+    "type": "Weapon",
+    "name": "Laser",
+    "effects": "Lasers are template weapons, but instead of the regular burst templates, they use the double range shooting stick as a burst template.",
+    "book": "Core"
+  },
+  {
+    "id": 22,
+    "type": "Weapon",
+    "name": "Low-loader",
+    "effects": "Low-loader: If this vehicle collides with a wreck, it may gain 1 ammo for the Wreck Lobber.",
+    "book": "TX2"
+  },
+  {
+    "id": 23,
+    "type": "Weapon",
+    "name": "Magnetic Jammer",
+    "effects": "The target vehicle may not discard ammo tokens during its next activation.",
+    "book": "TX2"
+  },
+  {
+    "id": 24,
+    "type": "Weapon",
+    "name": "Mind Control",
+    "effects": "If this weapon scores one or more un-cancelled hits on the target, instead of causing damage, the attacking vehicle’s controller may select and place the maneuver template for the target vehicle next time the target vehicle activates, instead of its controller. During the next vehicle’s activation, all templates are considered to be permitted and the selected maneuver is considered to be hazardous.",
+    "book": "Core"
+  },
+  {
+    "id": 25,
+    "type": "Weapon",
+    "name": "Mines",
+    "effects": "The first vehicle to touch the Mines template is attacked with a 3D6 shooting attack dice with Blast. After resolving the attack, remove the Mines template from play.",
+    "book": "Core"
+  },
+  {
+    "id": 26,
+    "type": "Weapon",
+    "name": "Mortar",
+    "effects": "When making a shooting attack with the Mortar, the vehicle may ignore terrain and cover during that attack.",
+    "book": "Core"
+  },
+  {
+    "id": 27,
+    "type": "Weapon",
+    "name": "Oil Slick Dropper",
+    "effects": "The dropped weapon template for the oil slick dropper counts as a treacherous surface.",
+    "book": "Core"
+  },
+  {
+    "id": 28,
+    "type": "Weapon",
+    "name": "Ram",
+    "effects": "The ram can represent a ram, a bulldozer blade, a cow-catcher, a buzz saw, a wrecking ball on a chain, spiked or scythed wheels, metal spikes or any other vicious or dangerous close combat weapon attached to the vehicle. When involved in a collision on the declared facing, this vehicle may add +2 attack dice to its smash attack. When involved in a collision during its own activation, this vehicle does not gain any hazard tokens as a result of the collision. A vehicle may only purchase a ram once on each facing.",
+    "book": "Core"
+  },
+  {
+    "id": 29,
+    "type": "Weapon",
+    "name": "Remote-controlled Car",
+    "effects": "When dropped, place a tiny car miniature (no larger than 20mm square) anywhere within short range of the active vehicle, and facing in any direction (this placement triggers a COLLISION WINDOW). From now on, the tiny car counts as a vehicle in gear 3 with 1 hull point, 1 crew and 0 handling. This tiny car can make shooting attacks but cannot stick-shift. This tiny car does not count as part of the player’s team, and so cannot be used for the purposes of (e.g.) scenario rules, audience votes or perks.\nIf this tiny car is involved in a collision, it suffers 1 damage before the collision is resolved. When this tiny car would be wrecked, it instead explodes. When this tiny car explodes, it rolls 4D6 attack dice, as if it were a middleweight vehicle.",
+    "book": "Core"
+  },
+  {
+    "id": 30,
+    "type": "Weapon",
+    "name": "Ridonkulous Firepower",
+    "effects": "When this weapon is fired, the vehicle is immediately moved a Short Straight backwards, is reduced to gear 1, and receives 3 hazard tokens. Front mounted only (Ed: Another Battlehammer special).",
+    "book": "TX2"
+  },
+  {
+    "id": 31,
+    "type": "Weapon",
+    "name": "Scrapshot",
+    "effects": "When attacking with this weapon, this weapon rolls 3D6 attack dice if the target is within Short range, 2D6 attack dice if the target is within Long range, and 1D6 attack dice if the target is within Double range.",
+    "book": "TX2"
+  },
+  {
+    "id": 32,
+    "type": "Weapon",
+    "name": "Sentry Gun",
+    "effects": "When activating this dropped weapon, place the small burst template, and then place a Sentry Gun so that it is wholly within the small burst template. This Sentry Gun then remains in play, and uses the rules for Gun Turrets (found in the “Arena of Death” scenario). These Sentry Guns will never target vehicles from the team of the vehicle that dropped it. GUN TURRETS count as middleweight destructible obstacles. They may be targeted with shooting attacks, and have 4 hull points if shot at. Gun turrets automatically make a 2D6 shooting attack targeting the first vehicle to end their movement step within medium range of the turret each Gear Phase. The target may evade as normal.",
+    "book": "Core"
+  },
+  {
+    "id": 33,
+    "type": "Weapon",
+    "name": "Smoke",
+    "effects": "The dropped weapon template for smoke counts as a rough surface, and counts as an obstruction for the purposes of determining cover.",
+    "book": "TX2"
+  },
+  {
+    "id": 34,
+    "type": "Weapon",
+    "name": "Specialist",
+    "effects": "A vehicle may only ever purchase one weapon with this special rule.",
+    "book": "TX2"
+  },
+  {
+    "id": 35,
+    "type": "Weapon",
+    "name": "Steel Ball",
+    "effects": "If this weapon is assigned a crewmember during the attack step this vehicle must engage in a T-Bone collision with every vehicle and destructible obstacle within short range of it. During these collisions all vehicles count as having no weapons, upgrades, perks, or special rules except this one. During these collisions this vehicle gains +2 smash attack dice. This vehicle cannot gain more than 1 hazard token during each of these collisions.",
+    "book": "Core"
+  },
+  {
+    "id": 36,
+    "type": "Weapon",
+    "name": "Thumper",
+    "effects": "Requires access to Electrical Weapons. The Thumper is a powerful sonic device that emits a shock wave that hurls nearby vehicles into the air. When this vehicle declares an attack with the Thumper, every other vehicle (friend or foe) within medium range of this vehicle immediately makes a flip check, in which they count their current gear as 2 higher, up to a maximum of 6. The Thumper may only be fired once per turn.",
+    "book": "TX2"
+  },
+  {
+    "id": 37,
+    "type": "Weapon",
+    "name": "Toss",
+    "effects": "If this vehicle attacks a vehicle of the same weight class or lighter with the Grabber Arm and scores one or more un-cancelled hits, the controller of the active vehicle may place the target vehicle anywhere within short range of the target vehicle’s original position. The target vehicle may be rotated to face any direction. This movement causes a COLLISION WINDOW.",
+    "book": "TX2"
+  },
+  {
+    "id": 38,
+    "type": "Weapon",
+    "name": "Trebuchet",
+    "effects": "Trebuchet: The Wreck Lobber doesn’t require a target. When it is fired, place a marker the size of a penny within double range of the Wreck Lobber’s fire arc.\nRoll a skid die:\n• Shift: place the wreck of a Car touching the marker and trigger a COLLISION WINDOW.\n• Spin or Slide: the player to the left of the active player must place the wreck anywhere within short range of the marker and trigger a COLLISION WINDOW.\n• Hazard: the player to the left of the active player must place the wreck touching the active vehicle and trigger a COLLISION WINDOW.",
+    "book": "TX2"
+  },
+  {
+    "id": 39,
+    "type": "Vehicle",
+    "name": "Airborne",
+    "effects": "This vehicle ignores obstructions, dropped weapons and terrain at all times, except that this vehicle may target other vehicles in its attack step. Other vehicles ignore this vehicle at all times, except that other vehicles may target this vehicle during their attack steps. This vehicle cannot be involved in collisions.",
+    "book": "TX2"
+  },
+  {
+    "id": 40,
+    "type": "Vehicle",
+    "name": "Airwolf",
+    "effects": "At the start of this vehicle’s activation, this vehicle may make a single pivot about its centre point, up to 90 degrees.",
+    "book": "Core"
+  },
+  {
+    "id": 41,
+    "type": "Vehicle",
+    "name": "All Terrain",
+    "effects": "This vehicle may ignore the penalties for rough and treacherous surfaces.",
+    "book": "Core"
+  },
+  {
+    "id": 42,
+    "type": "Vehicle",
+    "name": "Articulated",
+    "effects": "MOVEMENT: If the trailer is dead straight in relation to the cab, the War Rig is said to be UNARTICULATED. If the trailer is pivoted in relation to the cab, the War Rig is said to be If a War Rig begins its movement step unarticulated and becomes articulated at any point during its movement step, it gains +1 hazard token.\nIf a War Rig begins its movement step articulated, it must end its movement step unarticulated, or gain +1 hazard token.\nSPIN RESULTS: Spin the whole model as a single object, ensuring that an articulated war rig is moved as a fixed object. Ensure that the cab and trailer end the spin in the same orientation relative to each other.\nWIPING OUT: When a War Rig suffers a wipeout, ignore Step 4. (I.e. do not rotate the War Rig.)\nJACKKNIFE: If a War Rig fails a flip check, do not resolving a flip and instead resolve a JACKKNIFE. The player to the left of the active player articulates the War Rig as they like, and then rotates the articulated cab and trailer as a single fixed object up to 90 degrees in either direction. Collision Window: The War Rig performs a 4D6 attack against itself that cannot be evaded.\nSHOOTING: When purchasing a weapon for a War Rig, the player must declare whether that weapons is installed on the cab or the trailer.\nWhen measuring range, place the shooting template touching either the cab or the trailer, depending on where the weapon is mounted.",
+    "book": "Core"
+  },
+  {
+    "id": 43,
+    "type": "Vehicle",
+    "name": "Battle Taxi",
+    "effects": "Any weapon with the “Crew fired” special rule gains the “Blitz” special rule when purchased for this vehicle.",
+    "book": "TX3"
+  },
+  {
+    "id": 44,
+    "type": "Vehicle",
+    "name": "Big Tires",
+    "effects": "This vehicle may ignore the penalty for being on a rough surface, and considers a treacherous surface to be a rough surface.",
+    "book": "Core"
+  },
+  {
+    "id": 45,
+    "type": "Vehicle",
+    "name": "Bombs Away",
+    "effects": "When purchasing weapons, this vehicle may count dropped weapons as requiring 0 build slots.",
+    "book": "Core"
+  },
+  {
+    "id": 46,
+    "type": "Vehicle",
+    "name": "Up and Over",
+    "effects": "After resolving a collision with a Bike, Buggy, Car, Pickup Truck, Performance Car, Lightweight Obstacle or Middleweight Obstacle during movement step 1.7, this vehicle may ignore the obstruction for the remainder of its movement step, as it drives right over the top of it.",
+    "book": "Core"
+  },
+  {
+    "id": 47,
+    "type": "Vehicle",
+    "name": "Downers",
+    "effects": "When  this  vehicle  declares  a  SMASH  ATTACK  during  its  activation  remove  2 hazard tokens from the target vehicle, and then reduce the target vehicle’s crew value by 1 until the end of the phase.",
+    "book": "TX3"
+  },
+  {
+    "id": 48,
+    "type": "Vehicle",
+    "name": "Full Throttle",
+    "effects": "This vehicle considers the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear.",
+    "book": "Core"
+  },
+  {
+    "id": 49,
+    "type": "Vehicle",
+    "name": "Infuriating Jingle",
+    "effects": "Vehicles  that  target  this  vehicle  with  a  SMASH  ATTACK  during  a collision receive no hazard tokens during step 6 of the collision resolution.",
+    "book": "TX3"
+  },
+  {
+    "id": 50,
+    "type": "Vehicle",
+    "name": "Jet Engine",
+    "effects": "A vehicle with a jet engine counts as having a Nitro Booster with infinite ammo tokens. This vehicle automatically explodes when it is wrecked. A vehicle with a jet engine MUST use the Nitro Booster every time it activates.",
+    "book": "TX3"
+  },
+  {
+    "id": 51,
+    "type": "Vehicle",
+    "name": "Mobile Garage",
+    "effects": "If this vehicle starts its activation within medium range of one or more wrecks, it may reduce its crew value by any amount, until the end of the game, to flip a single target wreck back over to an active vehicle. The recovered vehicle gains D6 hull points and 1 crew for each crew this vehicle reduced by this effect, up to a maximum of the recovered vehicle’s starting hull and crew values.",
+    "book": "TX3"
+  },
+  {
+    "id": 52,
+    "type": "Vehicle",
+    "name": "Piledriver Attack",
+    "effects": "During this vehicle’s movement step, when this vehicle collides with another vehicle of a lighter weight-class, it may declare a PILEDRIVER ATTACK as its reaction.\nIf a vehicle is targeted with a piledriver attack, after resolving the collision, the controller of the vehicle that made the piledriver attack may place the target vehicle anywhere within short range of the target vehicle’s original position. The target vehicle is rotated to face any direction, such that it does not collide with the active vehicle again.",
+    "book": "Core"
+  },
+  {
+    "id": 53,
+    "type": "Vehicle",
+    "name": "Pivot",
+    "effects": "At the start of this vehicle’s activation, if this vehicle’s current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction.",
+    "book": "Core"
+  },
+  {
+    "id": 54,
+    "type": "Vehicle",
+    "name": "Roll Cage",
+    "effects": "When this vehicle suffers a flip, this vehicle may choose to ignore the 2 hits received from the flip.",
+    "book": "Core"
+  },
+  {
+    "id": 55,
+    "type": "Vehicle",
+    "name": "Sardines",
+    "effects": "This vehicle may not have its crew value increased above 6.",
+    "book": "TX3"
+  },
+  {
+    "id": 56,
+    "type": "Vehicle",
+    "name": "Slip Away",
+    "effects": "If this vehicle is targeted with a tailgate, T-bone or sideswipe smash attack, and this vehicle declares evade as its reaction, this vehicle may perform a free activation immediately after the active vehicle completes its activation. This free activation does not count as the vehicle’s activation this gear phase. Note: Use of the Slip Away rule can allow this vehicle to activate twice in a row; twice in one gear phase; or once in a gear phase that it does not qualify to activate in (and it might then stickshift and qualify late in that phase). Friendly vehicles can trigger this effect.",
+    "book": "Core"
+  },
+  {
+    "id": 57,
+    "type": "Vehicle",
+    "name": "Tanker Anchor",
+    "effects": "At the start of its activation, this vehicle may gain +1 hazard token to skip its movement step. This vehicle may then increase its current gear by 1.",
+    "book": "Core"
+  },
+  {
+    "id": 58,
+    "type": "Vehicle",
+    "name": "Uppers",
+    "effects": "If  this  vehicle  is  involved  in  a  collision  in  which  both  vehicles  declare  an  evade, both vehicles must declare a single stick-shift up immediately after the collision is resolved (gaining a hazard token as per the normal stick-shift rules). If either vehicle is already at its max gear, the stick-shift does not affect that vehicle’s current gear, but that vehicle does gain a hazard token.",
+    "book": "TX3"
+  },
+  {
+    "id": 59,
+    "type": "Upgrade",
+    "name": "Armour Plating",
+    "effects": "The vehicle has been loaded with additional plates and shielding, raising its hull value by 2. A single vehicle may be fitted with multiple Armour Plating upgrades for further +2 hull points each time.",
+    "book": "Core"
+  },
+  {
+    "id": 60,
+    "type": "Upgrade",
+    "name": "Cluster Bombs",
+    "effects": "",
+    "book": ""
+  },
+  {
+    "id": 61,
+    "type": "",
+    "name": "When This Vehicle Makes A Shooting Attack With A Mortar, It May Choose To Roll 0 Attack Dice To Instead Make A 2d6 Explosion Attack Against Every Vehicle Within Medium Range Of The Target Vehicle, Including The Target Vehicle.",
+    "effects": "Core",
+    "book": ""
+  },
+  {
+    "id": 62,
+    "type": "Upgrade",
+    "name": "Ejector Seat",
+    "effects": "",
+    "book": ""
+  },
+  {
+    "id": 63,
+    "type": "",
+    "name": "When This Vehicle Is Wrecked, An In-play Vehicle From This Team May Immediately Gain All Its Perks (Ignoring Any Duplicate Perks). If It Does, The Wrecked Vehicle May Not Be Re-spawned During This Game.",
+    "effects": "TX2",
+    "book": ""
+  },
+  {
+    "id": 64,
+    "type": "Upgrade",
+    "name": "Extra Crewmembers",
+    "effects": "A vehicle may purchase a maximum number of extra crewmembers equal to its starting crew value.",
+    "book": "Core"
+  },
+  {
+    "id": 65,
+    "type": "Upgrade",
+    "name": "Improvised Sludge Thrower",
+    "effects": "",
+    "book": ""
+  },
+  {
+    "id": 66,
+    "type": "",
+    "name": "Sludge Thower: This Vehicle May Place The Burst Templates For Its Dropped Weapons Anywhere Within A 360° Arc Of Fire That Is At Least Partially Within Medium Range Of This Vehicle.",
+    "effects": "TX2",
+    "book": ""
+  },
+  {
+    "id": 67,
+    "type": "Upgrade",
+    "name": "Nitro Booster",
+    "effects": "This vehicle may declare that it is using this item at the start of any activation. This vehicle activates twice during this activation. During its first activation, this vehicle may only select the long straight template as its maneuver, does not make a skid check and must skip its attack step. After the first activation, this vehicle gains hazard tokens until it has 5 hazard tokens. During the second activation, this vehicle is free to choose a maneuver as normal, must make a skid check as normal, and may take its attack step as normal. After the second activation, this vehicle gains hazard tokens until it has 5 hazard tokens.",
+    "book": "TX2"
+  },
+  {
+    "id": 68,
+    "type": "Upgrade",
+    "name": "Prison Car",
+    "effects": "Reduce the cost of this vehicle by 4 Cans. Reduce the hull value of this vehicle by 2. May only be purchased by middleweight vehicles.",
+    "book": "Core"
+  },
+  {
+    "id": 69,
+    "type": "Upgrade",
+    "name": "Tank Tracks",
+    "effects": "The vehicle with tank tracks has had its wheels replaced with caterpillar tracks. It increasesits handling by 1, but reduces its max gear by 1. This vehicle may also ignore rough and treacherous surfaces.A vehicle may only purchase tank tracks once. Tanks, Helicopters and Gyrocopters may not purchase tank tracks.",
+    "book": "Core"
+  },
+  {
+    "id": 70,
+    "type": "Upgrade",
+    "name": "Turret Mounting For Weapon",
+    "effects": "Turret Mounting for Weapon",
+    "book": "Core"
+  },
+  {
+    "id": 71,
+    "type": "Upgrade",
+    "name": "Louder Siren",
+    "effects": "At  the  end  of  this  vehicle’s  activation,  if  this  vehicle  in  any enemy vehicle's  rear  arc  of  fire (regardless of range), the enemy vehicle's must either reduce its gear by 1 or gain 2 hazards.",
+    "book": "TX3"
+  },
+  {
+    "id": 72,
+    "type": "Perk",
+    "name": "Battlehammer",
+    "effects": "When making a smash attack, this vehicle gains +1 attack dice for each hazard token it currently has.",
+    "book": "Core"
+  },
+  {
+    "id": 73,
+    "type": "Perk",
+    "name": "Big Tires",
+    "effects": "This vehicle may ignore the penalties for being on rough or treacherous surfaces.",
+    "book": "Core"
+  },
+  {
+    "id": 74,
+    "type": "Perk",
+    "name": "Boarding Party",
+    "effects": "This vehicle ignores the distracted rule. Crewmembers in this vehicle may attack during the attack step even if the vehicle is distracted.",
+    "book": "Core"
+  },
+  {
+    "id": 75,
+    "type": "Perk",
+    "name": "Chrome-whisperer",
+    "effects": "This vehicle may push it any number of times during a single skid check, gaining +1 hazard token each time.",
+    "book": "Core"
+  },
+  {
+    "id": 76,
+    "type": "Perk",
+    "name": "Cover Me",
+    "effects": "Once during its activation, this vehicle may remove a hazard token and place it on another friendly vehicle within double range.",
+    "book": "Core"
+  },
+  {
+    "id": 77,
+    "type": "Perk",
+    "name": "Crowd Pleaser",
+    "effects": "If this vehicle wipes out, gain +1 audience vote.",
+    "book": "Core"
+  },
+  {
+    "id": 78,
+    "type": "Perk",
+    "name": "Dead-eye",
+    "effects": "During this vehicle’s attack step, up to three crewmembers in this vehicle may gain a +1 bonus to hit if making a shooting attack at a target within double range and not within medium range. Critical hits still occur only on the natural roll of a 6.",
+    "book": "Core"
+  },
+  {
+    "id": 79,
+    "type": "Perk",
+    "name": "Delicate Touch",
+    "effects": "This vehicle ignores the hazard icons on maneuver templates.",
+    "book": "Core"
+  },
+  {
+    "id": 80,
+    "type": "Perk",
+    "name": "Double-barrelled",
+    "effects": "During the attack step, up to 3 crewmembers in this vehicle may gain a +1 bonus to hit when shooting with a handgun.",
+    "book": "Core"
+  },
+  {
+    "id": 81,
+    "type": "Perk",
+    "name": "Easy Rider",
+    "effects": "Once per turn, this vehicle may discard one rolled skid die result before applying the results.",
+    "book": "Core"
+  },
+  {
+    "id": 82,
+    "type": "Perk",
+    "name": "Evasive",
+    "effects": "This vehicle counts a roll of a 5+ as a success during an evade attempt.",
+    "book": "Core"
+  },
+  {
+    "id": 83,
+    "type": "Perk",
+    "name": "Experimental Nuclear Engine",
+    "effects": "Add +2 to this vehicle’s max gear, (up to a maximum of 6). This vehicle considers the long straight maneuver to be permitted in any gear. If this vehicle ever fails a flip check, it is immediately wrecked and explodes. When this vehicle explodes, it counts as heavyweight. This perk may not be purchased for lightweight vehicles.",
+    "book": "Core"
+  },
+  {
+    "id": 84,
+    "type": "Perk",
+    "name": "Experimental Teleporter",
+    "effects": "At the start of this vehicle’s activation this vehicle may choose to activate the EXPERIMENTAL TELEPORTER. Gain 3 hazard tokens, and then roll a single skid die. • If the skid dice result is any result other than a hazard, place this vehicle anywhere within medium range of its current position, not touching an obstruction or terrain, and without altering the vehicle’s facing. This cannot cause a collision. • If the skid dice result is a hazard, the player to the left of the controller of the active vehicle places this vehicle anywhere within long range of its current position, not touching an obstruction or terrain, without altering its facing. This cannot cause a collision.",
+    "book": "Core"
+  },
+  {
+    "id": 85,
+    "type": "Perk",
+    "name": "Expertise",
+    "effects": "This vehicle adds +1 to its handling value.",
+    "book": "Core"
+  },
+  {
+    "id": 86,
+    "type": "Perk",
+    "name": "Fenderkiss",
+    "effects": "Reduce the number of attack dice rolled for smash attacks by 2 for all vehicles in collisions involving this vehicle.",
+    "book": "Core"
+  },
+  {
+    "id": 87,
+    "type": "Perk",
+    "name": "Fist Of Steel",
+    "effects": "This vehicle may take a hazard token to re-roll all its attack dice during a smash attack.",
+    "book": "Core"
+  },
+  {
+    "id": 88,
+    "type": "Perk",
+    "name": "Force Transferal",
+    "effects": "If this vehicle loses one or more hull points due to any attack with the Blast rule, this vehicle may immediately stick-shift up.",
+    "book": "Core"
+  },
+  {
+    "id": 89,
+    "type": "Perk",
+    "name": "Fully Loaded",
+    "effects": "When this vehicle attacks with a shooting weapon that has 2 or more ammo tokens remaining, gain +1 attack die.",
+    "book": "Core"
+  },
+  {
+    "id": 90,
+    "type": "Perk",
+    "name": "Grinderman",
+    "effects": "Before this vehicle rolls its attack dice in a smash attack, it may choose to add hazard tokens to the target vehicle for each damage it inflicts, instead of removing hull points.",
+    "book": "Core"
+  },
+  {
+    "id": 91,
+    "type": "Perk",
+    "name": "Gyroscope",
+    "effects": "At the start of each game, this vehicle gains a random PRECISION PERK. This perk is lost at the end of the game.",
+    "book": "Core"
+  },
+  {
+    "id": 92,
+    "type": "Perk",
+    "name": "Handbrake Artist",
+    "effects": "When applying a spin result, this vehicle may choose to face any direction.",
+    "book": "Core"
+  },
+  {
+    "id": 93,
+    "type": "Perk",
+    "name": "Headshot",
+    "effects": "When making a shooting attack, this vehicle’s critical hits inflict 3 hits instead of the normal 2 hits.",
+    "book": "Core"
+  },
+  {
+    "id": 94,
+    "type": "Perk",
+    "name": "Hell For Leather",
+    "effects": "This vehicle considers long straight to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear.",
+    "book": "Core"
+  },
+  {
+    "id": 95,
+    "type": "Perk",
+    "name": "Hot Start",
+    "effects": "Roll a D6 at the start of the game. This vehicle starts the game in that gear.",
+    "book": "Core"
+  },
+  {
+    "id": 96,
+    "type": "Perk",
+    "name": "Loader",
+    "effects": "This vehicle may assign two crewmembers to a single weapon during the attack step to gain +1 to hit with that weapon. The second crewmember may not make a separate attack. Critical hits still occur only on the natural roll of a 6.",
+    "book": "Core"
+  },
+  {
+    "id": 97,
+    "type": "Perk",
+    "name": "Madman",
+    "effects": "At the end of this vehicle’s activation, if it has 4 or more hazard tokens, it may remove a hazard token and place it on another vehicle within medium range.",
+    "book": "Core"
+  },
+  {
+    "id": 98,
+    "type": "Perk",
+    "name": "Mobile Mechanic",
+    "effects": "Once per turn, during the attack step, a single crewmember may be assigned to perform a FIELD REPAIR instead of attacking with a weapon. This vehicle gains 1 hull point, which may not take the remaining hull points above the vehicle’s hull value.",
+    "book": "Core"
+  },
+  {
+    "id": 99,
+    "type": "Perk",
+    "name": "Moment Of Glory",
+    "effects": "Once per game, after rolling the skid dice, but before resolving the results, this vehicle may immediately change any number of skid dice to any results they choose.",
+    "book": "Core"
+  },
+  {
+    "id": 100,
+    "type": "Perk",
+    "name": "Momentum",
+    "effects": "When resolving a skid check, this vehicle may set aside any number of slide results to re-roll 1 non-slide result for each slide result set aside. When resolving a skid check, this vehicle may set aside any number for each spin results to re-roll 1 non-spin result for each spin result set aside. Set aside results must be resolved.",
+    "book": "Core"
+  },
+  {
+    "id": 101,
+    "type": "Perk",
+    "name": "Murder Tractor",
+    "effects": "This vehicle may make piledriver attacks, like a War Rig. During this vehicle’s movement step, when this vehicle collides with another vehicle of a lighter weight-class, it may declare a PILEDRIVER ATTACK as its reaction. If a vehicle is targeted with a piledriver attack, after resolving the collision, the controller of the vehicle that made the piledriver attack may place the target vehicle anywhere within short range of the target vehicle’s original position. The target vehicle is rotated to face any direction, such that it does not collide with the active vehicle again.",
+    "book": "Core"
+  },
+  {
+    "id": 102,
+    "type": "Perk",
+    "name": "Overload",
+    "effects": "When making a skid check, this vehicle may roll one additional skid die. If it does, it must change up at least one gear or gain a hazard token.",
+    "book": "Core"
+  },
+  {
+    "id": 103,
+    "type": "Perk",
+    "name": "Powder Keg",
+    "effects": "This vehicle may add +1 to its explosion check. Treat this vehicle as one weight-class heavier when it explodes. Note: this bonus does apply during resolution of the FIREWORKS perk.",
+    "book": "Core"
+  },
+  {
+    "id": 104,
+    "type": "Perk",
+    "name": "Powerslide",
+    "effects": "This vehicle may use any template except the long straight template instead of the slide template when applying a slide result. As with the movement step 1.1, you must use the first maneuver template you touch. Treat the selected maneuver template as a slide template for purposes of finding the vehicle’s final position.",
+    "book": "Core"
+  },
+  {
+    "id": 105,
+    "type": "Perk",
+    "name": "Purring",
+    "effects": "This vehicle does not receive more than 1 hazard token from Spin results each turn. This vehicle does not receive more than 1 hazard token from Slide results each turn. This vehicle does not receive more than 1 hazard token from Hazard results each turn. Excess hazards are ignored. This vehicle may still elect to resolve multiple copies of each result",
+    "book": "Core"
+  },
+  {
+    "id": 106,
+    "type": "Perk",
+    "name": "Rapid Fire",
+    "effects": "Once per turn a single crewmember in this vehicle may shoot twice with the same weapon in a single attack step. When firing a weapon that has limited ammo in this way, each attack removes a separate ammo token.",
+    "book": "Core"
+  },
+  {
+    "id": 107,
+    "type": "Perk",
+    "name": "Rear Drive",
+    "effects": "This vehicle may pivot about the centre of its front edge, rather than the centre of the vehicle, when resolving Spin results.",
+    "book": "Core"
+  },
+  {
+    "id": 108,
+    "type": "Perk",
+    "name": "Restraint",
+    "effects": "When making a skid check, this vehicle does not receive hazard tokens for stick-shifting down a gear.",
+    "book": "Core"
+  },
+  {
+    "id": 109,
+    "type": "Perk",
+    "name": "Return Fire",
+    "effects": "Once per gear phase, if this vehicle is the target of a shooting attack, this vehicle may take 2 hazard tokens to immediately attack, as if it was this vehicle’s attack step.",
+    "book": "Core"
+  },
+  {
+    "id": 110,
+    "type": "Perk",
+    "name": "Road Warrior",
+    "effects": "If this vehicle successfully causes one or more hits on an enemy vehicle at any point during its activation, this vehicle may remove a single hazard token for free at the end of its activation.",
+    "book": "Core"
+  },
+  {
+    "id": 111,
+    "type": "Perk",
+    "name": "Rocket Thrusters",
+    "effects": "When this vehicle is moved as part of a flip, it may choose to use the long straight, veer or gentle templates instead of the medium straight template.",
+    "book": "Core"
+  },
+  {
+    "id": 112,
+    "type": "Perk",
+    "name": "Skiing",
+    "effects": "May only be taken on a Bike, Buggy, Car, or Performance Car. This vehicle may take 3 hazard tokens at the end of its activation to be ignored by other vehicles during their movement steps until the start of this vehicle’s next activation. If, by ignoring this vehicle in this way, a vehicle’s final position would overlap it, move that vehicle backwards along their maneuver template by the minimum amount to avoid overlapping any obstruction.",
+    "book": "Core"
+  },
+  {
+    "id": 113,
+    "type": "Perk",
+    "name": "Slippery",
+    "effects": "Vehicles making a smash attack targeting this vehicle suffer a penalty of -2 attack dice.",
+    "book": "Core"
+  },
+  {
+    "id": 114,
+    "type": "Perk",
+    "name": "Slipstream",
+    "effects": "During this vehicles’ skid check, this vehicle gains a shift result if there is another vehicle within short range in front of it, (measured like a front-mounted short range shooting attack).",
+    "book": "TX2"
+  },
+  {
+    "id": 115,
+    "type": "Perk",
+    "name": "Stunt Driver",
+    "effects": "May only be taken on a Bike, Buggy, Car or Performance Car. This vehicle may choose to ignore any number of obstructions during its movement step. After any movement step in which this vehicle chooses to ignore any obstruction using this ability, this vehicle immediately gains 3 hazard tokens.",
+    "book": "TX2"
+  },
+  {
+    "id": 116,
+    "type": "Perk",
+    "name": "Terrifying Lunatic",
+    "effects": "Whenever a vehicle controlled by another player ends its movement step within short range of this vehicle, the active vehicle gains a hazard token.",
+    "book": "TX2"
+  },
+  {
+    "id": 117,
+    "type": "Perk",
+    "name": "Time Extended!",
+    "effects": "At the end of an activation in which this vehicle passes a gate, before checking for wipeouts, this vehicle may immediately remove any number of hazard tokens.",
+    "book": "TX2"
+  },
+  {
+    "id": 118,
+    "type": "Perk",
+    "name": "Trick Driving",
+    "effects": "This vehicle may select a maneuver template as if its current gear was one higher or one lower. This vehicle still uses its actual current gear during its skid check. An otherwise unpermitted maneuver template selected using this perk counts as a hazardous maneuver.",
+    "book": "TX2"
+  },
+  {
+    "id": 119,
+    "type": "Perk",
+    "name": "Whizbang",
+    "effects": "At the start of each game, this vehicle gains a random SPEED PERK. This perk is lost at the end of the game.",
+    "book": "TX2"
+  },
+  {
+    "id": 120,
+    "type": "Perk",
+    "name": "On Your Tail",
+    "effects": "When  an  enemy  vehicle  resolves  a  spin  or  slide  move  that  ends within short range of this vehicle, that vehicle gains +1 hazard token.",
+    "book": "TX3"
+  },
+  {
+    "id": 121,
+    "type": "Perk",
+    "name": "Schadenfreude",
+    "effects": "If another vehicle within short range of this vehicle resolves a wipe out, (either before or after any flip), remove all hazard tokens from this vehicle.",
+    "book": "TX3"
+  },
+  {
+    "id": 122,
+    "type": "Perk",
+    "name": "Taunt",
+    "effects": "At the start of this vehicle’s attack step, roll a skid die. If you roll something other than a SHIFT result, you may place that skid die result onto the dashboard of a target vehicle within short range. This skid die result must be resolved during that vehicle’s next skid check, and may not be re-rolled.",
+    "book": "TX3"
+  },
+  {
+    "id": 123,
+    "type": "Perk",
+    "name": "Out Run",
+    "effects": "At the start of this vehicle’s attack step, all vehicles within short range of this vehicle and in a current, lower gear than this vehicle gain +1 hazard token.",
+    "book": "TX3"
+  },
+  {
+    "id": 124,
+    "type": "Perk",
+    "name": "Pit",
+    "effects": "If  this  vehicle  is  involved  in  a  collision  with  an  enemy  vehicle  during  its activation  that  is  not  head-on,  it  may  declare  a  “Pursuit  Intervention  Technique”  (PIT) against  the  enemy  vehicle  instead  of  declaring  a  SMASH  ATTACK  or  an  evade.  If  this vehicle  declares  a  PIT,  it  may  select  any  maneuver  template  the  target  vehicle  considers hazardous in its current gear. The target vehicle must immediately resolve a movement step, during which it is forced to must use the maneuver template selected for it and may not roll any skid dice.",
+    "book": "TX3"
+  },
+  {
+    "id": 125,
+    "type": "Perk",
+    "name": "Unnerving Eye Contact",
+    "effects": "Enemy vehicles within short range of this vehicle may not use shift results to remove hazard tokens from their dashboard.",
+    "book": "TX3"
+  }
+]

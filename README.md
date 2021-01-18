@@ -1,4 +1,6 @@
-# GaslandsGarageBuilder
+# Gaslands Garage Builder 1.0
+
+With the team-builder you can generate Teams for your garage in Gaslands Refuelled.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
