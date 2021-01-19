@@ -1,7 +1,7 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { ServiceService } from "./services/service.service";
+import { ServiceService } from './services/service.service';
 import { Columns, Config, DefaultConfig } from 'ngx-easy-table';
-import { vehicle } from "./types/types";
+import { vehicle } from './types/types';
 
 @Component({
   selector: 'app-root',
@@ -19,14 +19,15 @@ export class AppComponent implements OnInit {
   constructor(private service: ServiceService) { }
 
   ngOnInit() {
-    this.service.getVehicles().then(vehicles => {this.vehicles = vehicles});
+    this.service.getVehicles().then(vehicles => { this.vehicles = vehicles; console.table(this.vehicles); });
     this.configuration = { ...DefaultConfig };
     this.configuration.searchEnabled = true;
     this.configuration.rows = 20;
-    this.configuration.paginationEnabled=false;
-    this.configuration.fixedColumnWidth=false;
-    this.configuration.horizontalScroll=true;
+    this.configuration.paginationEnabled = false;
+    this.configuration.fixedColumnWidth = false;
+    this.configuration.horizontalScroll = true;
     this.columns = [
+      { key: 'action', title: '', cellTemplate: this.addVehicle },
       { key: 'model', title: 'Model' },
       { key: 'weight', title: 'Weight' },
       { key: 'hullPoints', title: 'Hull Points' },
@@ -35,11 +36,10 @@ export class AppComponent implements OnInit {
       { key: 'buildSlots', title: 'Slots' },
       { key: 'crew', title: 'Crew' },
       { key: 'cost', title: 'Cost' },
-      { key: 'action', title: 'Actions', cellTemplate: this.addVehicle }
     ];
   }
 
-  addVehicleToGarage(row){
+  addVehicleToGarage(row) {
     console.log(row);
   }
 }

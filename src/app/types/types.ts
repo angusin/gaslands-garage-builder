@@ -1,4 +1,4 @@
-export type vehicle = {
+export interface vehicle {
   id: number;
   model: string;
   name: string;
@@ -13,7 +13,7 @@ export type vehicle = {
   specialRules: specialRule[];
 }
 
-export type upgrade = {
+export interface upgrade {
   id: number;
   name: string;
   type: string;
@@ -24,7 +24,7 @@ export type upgrade = {
   specialRules: specialRule[];
 }
 
-export type specialRule = {
+export interface specialRule {
   id: number;
   name: string;
   type: string;
