@@ -12,21 +12,16 @@ import { FormBuilderComponent } from './components/form-builder/form-builder.com
 import { CarListComponent } from './components/car-list/car-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    CarCardComponent,
-    FormBuilderComponent,
-    CarListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    TableModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        CarCardComponent,
+        FormBuilderComponent,
+        CarListComponent,
+    ],
+    imports: [BrowserModule, AppRoutingModule, HttpClientModule, TableModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
