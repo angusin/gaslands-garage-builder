@@ -2,6 +2,8 @@ import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { ServiceService } from './../../services/service.service';
 import { Columns, Config, DefaultConfig } from 'ngx-easy-table';
 import { vehicle } from './../../types/types';
+import { StoreService } from './../../services/store.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-car-list',
@@ -14,7 +16,11 @@ export class CarListComponent implements OnInit {
     public columns: Columns[];
     @ViewChild('addVehicle', { static: true }) addVehicle: TemplateRef<any>;
 
-    constructor(private service: ServiceService) {}
+    constructor(
+        private service: ServiceService,
+        private store: StoreService,
+        private router: Router
+    ) {}
 
     ngOnInit() {
         this.service.getVehicles().then(vehicles => (this.vehicles = vehicles));
@@ -37,7 +43,8 @@ export class CarListComponent implements OnInit {
         ];
     }
 
-    addVehicleToGarage(row) {
-        console.log(row);
+    addVehicleToGarage(row: number) {
+        this.store.addCarToGarage(this.vehicles[row]);
+        this.router.navigate(['/']);
     }
 }
