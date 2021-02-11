@@ -28,8 +28,9 @@
               "src/assets"
             ],
             "styles": [
-                "src/styles.scss",
-                "node_modules/ngx-easy-table/style.css"
+              "src/styles.scss",
+              "node_modules/bulma/css/bulma.min.css",
+              "node_modules/ngx-easy-table/style.css"
             ],
             "scripts": []
           },

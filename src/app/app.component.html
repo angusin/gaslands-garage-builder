@@ -1,11 +1,2 @@
-<ngx-table
-    [configuration]="configuration"
-    [data]="vehicles"
-    [columns]="columns"
->
-</ngx-table>
-<ng-template #addVehicle let-row let-rowIndex="rowIndex">
-    <div class="btn btn-primary" (click)="addVehicleToGarage(rowIndex)">
-        + Add
-    </div>
-</ng-template>
+<app-header></app-header>
+<div class="container"><router-outlet></router-outlet></div>

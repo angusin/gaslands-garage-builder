@@ -1,1 +1,11 @@
-<p>car-list works!</p>
+<ngx-table
+    [configuration]="configuration"
+    [data]="vehicles"
+    [columns]="columns"
+>
+</ngx-table>
+<ng-template #addVehicle let-row let-rowIndex="rowIndex">
+    <div class="button is-primary" (click)="addVehicleToGarage(rowIndex)">
+        + Add
+    </div>
+</ng-template>
