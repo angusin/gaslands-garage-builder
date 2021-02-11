@@ -13,4 +13,8 @@ export class StoreService {
     @action addCarToGarage(car: vehicle) {
         this.carsInGarage.push(car);
     }
+
+    @action deleteCarFromGarage(indexInArray: number) {
+        this.carsInGarage.splice(indexInArray, 1);
+    }
 }

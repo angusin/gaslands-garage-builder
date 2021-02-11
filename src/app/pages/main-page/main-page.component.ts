@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { computed } from 'mobx';
 import { StoreService } from './../../services/store.service';
 
@@ -7,12 +7,14 @@ import { StoreService } from './../../services/store.service';
     templateUrl: './main-page.component.html',
     styleUrls: ['./main-page.component.scss'],
 })
-export class MainPageComponent implements OnInit {
+export class MainPageComponent {
     constructor(private store: StoreService) {}
-
-    ngOnInit(): void {}
 
     @computed get carsInGarage() {
         return this.store.carsInGarage;
+    }
+
+    deleteCar(carIndex) {
+        this.store.deleteCarFromGarage(carIndex);
     }
 }
