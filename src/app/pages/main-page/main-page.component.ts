@@ -14,6 +14,10 @@ export class MainPageComponent {
         return this.store.carsInGarage;
     }
 
+    @computed get totalCost() {
+        return this.store.carsInGarage.reduce((a, b) => a + b.cost, 0);
+    }
+
     deleteCar(carIndex) {
         this.store.deleteCarFromGarage(carIndex);
     }
