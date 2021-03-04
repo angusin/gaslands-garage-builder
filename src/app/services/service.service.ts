@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { vehicle } from '../types/types';
+import { Vehicle } from '../types/types';
 
 @Injectable({
   providedIn: 'root',
@@ -10,10 +10,10 @@ export class ServiceService implements OnInit {
 
   ngOnInit() {}
 
-  getVehicles(): Promise<vehicle[]> {
+  getVehicles(): Promise<Vehicle[]> {
     return this.httpClient
       .get('assets/vehicles.json')
       .toPromise()
-      .then(res => <vehicle[]>res);
+      .then(res => <Vehicle[]>res);
   }
 }

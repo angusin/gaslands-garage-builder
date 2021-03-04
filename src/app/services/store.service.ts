@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { action, observable } from 'mobx';
-import { vehicle } from './../types/types';
+import { Vehicle } from './../types/types';
 
 @Injectable({
   providedIn: 'root',
 })
 export class StoreService {
-  @observable carsInGarage: vehicle[] = [];
+  @observable carsInGarage: Vehicle[] = [];
 
   constructor() {}
 
-  @action addCarToGarage(car: vehicle) {
+  @action addCarToGarage(car: Vehicle) {
     this.carsInGarage.push(car);
   }
 

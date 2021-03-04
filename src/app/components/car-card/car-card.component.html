@@ -1,7 +1,7 @@
 <div class="card-wrapper" id="card">
   <div class="card-top">
     <div class="left">
-      <p class="vehicle-type">PERFORMANCE CAR</p>
+      <p class="vehicle-type">{{ vehicle.model }}</p>
       <h3 class="vehicle-name">AUTOMATORT</h3>
     </div>
     <div class="right">
@@ -13,53 +13,32 @@
   <div class="card-stats">
     <div class="stat-circle handling">
       <i class="fas fa-sync-alt fa-2x icon"></i>
-      <span class="text">4</span>
+      <span class="text">{{ vehicle.handling }}</span>
     </div>
     <div class="stat-circle crew">
       <i class="fas fa-user-friends fa-2x icon"></i>
-      <span class="text">2</span>
+      <span class="text">{{ vehicle.crew }}</span>
     </div>
     <div class="stat-circle weight">
       <i class="fas fa-weight-hanging fa-2x icon"></i>
-      <span class="text">M</span>
+      <span class="text">{{ getWeightCharacter(vehicle.weight) }}</span>
     </div>
     <div class="stat-circle gear">
       <i class="fas fa-cogs fa-2x icon"></i>
-      <span class="text">6</span>
+      <span class="text">{{ vehicle.maxGear }}</span>
     </div>
   </div>
   <div class="card-rules">
     <ul>
-      <li>
-        <span>Slip Away</span> - If this vehicle is targeted with a tailgate,
-        T-bone or sideswipe smash attack, and this vehicle declares evade as its
-        reaction, this vehicle may perform a free activation immediately after
-        the active vehicle completes its activation. This free activation does
-        not count as the vehicle’s activation this gear phase. Friendly vehicles
-        can trigger this effect.
+      <li *ngFor="let rule of vehicle.specialRules">
+        <span>{{ rule.name }}</span> - {{ rule.effects }}
       </li>
     </ul>
   </div>
   <div class="card-bottom">
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
-    <div class="hull-circle"></div>
+    <div
+      *ngFor="let i of [].constructor(vehicle.hullPoints)"
+      class="hull-circle"
+    ></div>
   </div>
 </div>

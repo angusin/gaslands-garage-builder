@@ -12,7 +12,7 @@ $text-shadow-8px: 0px 0px 8px #000;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-image: url('/images/background-black.jpg');
+  background-image: url('/assets/images/background-black.jpg');
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -25,7 +25,7 @@ $text-shadow-8px: 0px 0px 8px #000;
     padding-bottom: 15px;
     box-sizing: border-box;
     display: flex;
-    background-image: url('/images/car-1.jpg');
+    background-image: url('/assets/images/car-1.jpg');
     background-position: center;
     background-size: cover;
 
@@ -38,8 +38,8 @@ $text-shadow-8px: 0px 0px 8px #000;
 
       .vehicle-type {
         color: white;
-        font-size: 14px;
-        font-weight: 200;
+        font-size: 16px;
+        font-weight: 400;
         text-shadow: $text-shadow-8px;
       }
 
@@ -76,7 +76,7 @@ $text-shadow-8px: 0px 0px 8px #000;
     align-items: center;
     padding: $card-padding;
     box-sizing: border-box;
-    background-image: url('/images/background-stripes.jpg');
+    background-image: url('/assets/images/background-stripes.jpg');
     background-position: center;
     background-size: contain;
     border-top: 2px solid black;
@@ -100,6 +100,7 @@ $text-shadow-8px: 0px 0px 8px #000;
         position: absolute;
         font-size: 30px;
         font-family: 'Oswald', sans-serif;
+        font-weight: 600;
       }
     }
   }
@@ -113,14 +114,14 @@ $text-shadow-8px: 0px 0px 8px #000;
     ul {
       color: white;
       list-style-type: none;
-      font-size: 12px;
+      font-size: 13px;
       font-family: 'Oswald', sans-serif;
 
       li {
-        font-weight: 200;
+        font-weight: 400;
 
         span {
-          font-weight: 400;
+          font-weight: 600;
         }
       }
     }
@@ -131,7 +132,7 @@ $text-shadow-8px: 0px 0px 8px #000;
     height: $height-bottom;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 10px;
 
     .hull-circle {

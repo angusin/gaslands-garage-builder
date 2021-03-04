@@ -2,14 +2,19 @@
   <div class="card add-button" routerLink="/car-selector">
     + Add new vehicle
   </div>
-  <div class="card">Total vehicles in garage: <b>5</b></div>
   <div class="card">
-    Total cost in garage: <b>{{ totalCost }}</b> barrels
+    Total vehicles in garage: <b>{{ carsInGarage.length }}</b>
+  </div>
+  <div class="card">
+    Total cost: <b>{{ totalCost }}</b> barrels
   </div>
 </div>
 <div class="cards-car-wrapper">
-  <app-car-card *ngFor="let car of carsInGarage; index as i"></app-car-card>
-  <div class="card" *ngFor="let car of carsInGarage; index as i">
+  <app-car-card
+    *ngFor="let car of carsInGarage; index as i"
+    [vehicle]="car"
+  ></app-car-card>
+  <!-- <div class="card" *ngFor="let car of carsInGarage; index as i">
     <div class="card-content">
       <div class="content">
         <h4>{{ car.model }}</h4>
@@ -23,5 +28,5 @@
       <a href="#" class="card-footer-item">Edit</a>
       <a href="#" class="card-footer-item" (click)="deleteCar(i)">Delete</a>
     </footer>
-  </div>
+  </div> -->
 </div>

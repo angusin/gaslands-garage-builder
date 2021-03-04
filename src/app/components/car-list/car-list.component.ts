@@ -1,7 +1,7 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { ServiceService } from './../../services/service.service';
 import { Columns, Config, DefaultConfig } from 'ngx-easy-table';
-import { vehicle } from './../../types/types';
+import { Vehicle } from './../../types/types';
 import { StoreService } from './../../services/store.service';
 import { Router } from '@angular/router';
 
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./car-list.component.scss'],
 })
 export class CarListComponent implements OnInit {
-  vehicles: vehicle[];
+  vehicles: Vehicle[];
   public configuration: Config;
   public columns: Columns[];
   @ViewChild('addVehicle', { static: true }) addVehicle: TemplateRef<any>;

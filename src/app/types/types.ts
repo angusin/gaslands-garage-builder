@@ -1,4 +1,4 @@
-export interface vehicle {
+export interface Vehicle {
   id: number;
   model: string;
   name: string;
@@ -9,11 +9,11 @@ export interface vehicle {
   buildSlots: number;
   crew: number;
   cost: number;
-  upgrades: upgrade[];
-  specialRules: specialRule[];
+  upgrades: Upgrade[];
+  specialRules: SpecialRule[];
 }
 
-export interface upgrade {
+export interface Upgrade {
   id: number;
   name: string;
   type: string;
@@ -21,10 +21,10 @@ export interface upgrade {
   range: string;
   buildSlots: number;
   cost: number;
-  specialRules: specialRule[];
+  specialRules: SpecialRule[];
 }
 
-export interface specialRule {
+export interface SpecialRule {
   id: number;
   name: string;
   type: string;
