@@ -6,6 +6,9 @@
 </ngx-table>
 <ng-template #addVehicle let-row let-rowIndex="rowIndex">
   <div class="button is-light" (click)="addVehicleToGarage(rowIndex)">
-    + Add
+    <span class="icon">
+      <i class="fas fa-plus"></i>
+    </span>
+    <span>Add vehicle</span>
   </div>
 </ng-template>

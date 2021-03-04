@@ -1,13 +1,12 @@
 <div class="cards-info-wrapper">
-  <div class="card add-button" routerLink="/car-selector">
-    + Add new vehicle
-  </div>
-  <div class="card">
-    Total vehicles in garage: <b>{{ carsInGarage.length }}</b>
-  </div>
-  <div class="card">
-    Total cost: <b>{{ totalCost }}</b> barrels
-  </div>
+  <button class="button is-link" routerLink="/car-selector">
+    <span class="icon">
+      <i class="fas fa-plus"></i>
+    </span>
+    <span>Add new vehicle</span>
+  </button>
+  Total vehicles in garage: <b>{{ carsInGarage.length }}</b> Total cost:
+  <b>{{ totalCost }}</b> barrels
 </div>
 <div class="cards-car-wrapper">
   <app-car-card
