@@ -3,18 +3,18 @@ import { action, observable } from 'mobx';
 import { vehicle } from './../types/types';
 
 @Injectable({
-    providedIn: 'root',
+  providedIn: 'root',
 })
 export class StoreService {
-    @observable carsInGarage: vehicle[] = [];
+  @observable carsInGarage: vehicle[] = [];
 
-    constructor() {}
+  constructor() {}
 
-    @action addCarToGarage(car: vehicle) {
-        this.carsInGarage.push(car);
-    }
+  @action addCarToGarage(car: vehicle) {
+    this.carsInGarage.push(car);
+  }
 
-    @action deleteCarFromGarage(indexInArray: number) {
-        this.carsInGarage.splice(indexInArray, 1);
-    }
+  @action deleteCarFromGarage(indexInArray: number) {
+    this.carsInGarage.splice(indexInArray, 1);
+  }
 }

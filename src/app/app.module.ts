@@ -14,18 +14,18 @@ import { CarSelectorPageComponent } from './pages/car-selector-page/car-selector
 import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        CarCardComponent,
-        FormBuilderComponent,
-        CarListComponent,
-        CarSelectorPageComponent,
-        MainPageComponent,
-    ],
-    imports: [BrowserModule, AppRoutingModule, HttpClientModule, TableModule],
-    providers: [],
-    bootstrap: [AppComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    CarCardComponent,
+    FormBuilderComponent,
+    CarListComponent,
+    CarSelectorPageComponent,
+    MainPageComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, TableModule],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

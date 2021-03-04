@@ -1,0 +1,145 @@
+$card-border-radius: 15px;
+$card-padding: 0 15px;
+$height-top: 130px;
+$height-middle: 60px;
+$height-bottom: 60px;
+$text-shadow-8px: 0px 0px 8px #000;
+
+.card-wrapper {
+  height: 440px;
+  width: 255px;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/images/background-black.jpg');
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+  .card-top {
+    height: $height-top;
+    padding: $card-padding;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url('/images/car-1.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      font-family: 'Oswald', sans-serif;
+
+      .vehicle-type {
+        color: white;
+        font-size: 14px;
+        font-weight: 200;
+        text-shadow: $text-shadow-8px;
+      }
+
+      .vehicle-name {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        text-shadow: $text-shadow-8px;
+      }
+    }
+    .right {
+      width: 50px;
+      display: flex;
+      align-items: flex-end;
+
+      .dice-box {
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .card-stats {
+    height: $height-middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $card-padding;
+    box-sizing: border-box;
+    background-image: url('/images/background-stripes.jpg');
+    background-position: center;
+    background-size: contain;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    -webkit-box-shadow: inset 0px 0px 7px 3px #000000;
+    box-shadow: inset 0px 0px 7px 3px #000000;
+
+    .stat-circle {
+      height: 40px;
+      width: 40px;
+      border-radius: 12px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+      .icon {
+        color: lightgrey;
+      }
+      .text {
+        position: absolute;
+        font-size: 30px;
+        font-family: 'Oswald', sans-serif;
+      }
+    }
+  }
+
+  .card-rules {
+    padding: $card-padding;
+    box-sizing: border-box;
+    flex: 1;
+    padding-top: 10px;
+
+    ul {
+      color: white;
+      list-style-type: none;
+      font-size: 12px;
+      font-family: 'Oswald', sans-serif;
+
+      li {
+        font-weight: 200;
+
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .card-bottom {
+    padding: $card-padding;
+    box-sizing: border-box;
+    height: $height-bottom;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+
+    .hull-circle {
+      height: 18px;
+      width: 18px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 0 2px;
+    }
+  }
+}

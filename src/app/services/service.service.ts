@@ -3,17 +3,17 @@ import { HttpClient } from '@angular/common/http';
 import { vehicle } from '../types/types';
 
 @Injectable({
-    providedIn: 'root',
+  providedIn: 'root',
 })
 export class ServiceService implements OnInit {
-    constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) {}
 
-    ngOnInit() {}
+  ngOnInit() {}
 
-    getVehicles(): Promise<vehicle[]> {
-        return this.httpClient
-            .get('assets/vehicles.json')
-            .toPromise()
-            .then(res => <vehicle[]>res);
-    }
+  getVehicles(): Promise<vehicle[]> {
+    return this.httpClient
+      .get('assets/vehicles.json')
+      .toPromise()
+      .then(res => <vehicle[]>res);
+  }
 }
