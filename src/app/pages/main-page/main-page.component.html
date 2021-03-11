@@ -5,8 +5,15 @@
     </span>
     <span>Add new vehicle</span>
   </button>
-  Total vehicles in garage: <b>{{ carsInGarage.length }}</b> Total cost:
-  <b>{{ totalCost }}</b> barrels
+  <div class="info">
+    <p>
+      Vehicles in garage: <b>{{ carsInGarage.length }}</b>
+    </p>
+    <p>
+      Total cost:
+      <b>{{ totalCost }} barrels</b>
+    </p>
+  </div>
 </div>
 <div class="cards-car-wrapper">
   <app-car-card
