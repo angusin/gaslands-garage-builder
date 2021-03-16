@@ -1,4 +1,21 @@
-<div class="card-wrapper" id="card">
+<div class="card">
+  <div class="card-content">
+    <div class="content">
+      <h4>{{ vehicle.model }}</h4>
+      {{ vehicle.weight }}
+      {{ vehicle.cost }}
+      {{ vehicle.upgrades }}
+      {{ vehicle.specialRules }}
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="#" class="card-footer-item">Edit</a>
+    <a href="#" class="card-footer-item">Weapons and Accesories</a>
+    <a href="#" class="card-footer-item" (click)="deleteCar()">Delete</a>
+  </footer>
+</div>
+
+<!-- <div class="card-wrapper" id="card">
   <div
     class="card-top"
     [ngStyle]="{
@@ -46,4 +63,4 @@
       class="hull-circle"
     ></div>
   </div>
-</div>
+</div> -->

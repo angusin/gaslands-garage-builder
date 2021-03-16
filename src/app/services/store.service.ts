@@ -14,7 +14,9 @@ export class StoreService {
     this.carsInGarage.push(car);
   }
 
-  @action deleteCarFromGarage(indexInArray: number) {
-    this.carsInGarage.splice(indexInArray, 1);
+  @action deleteCarFromGarage(car: Vehicle) {
+    this.carsInGarage.forEach((item, index) => {
+      if (item === car) this.carsInGarage.splice(index, 1);
+    });
   }
 }
