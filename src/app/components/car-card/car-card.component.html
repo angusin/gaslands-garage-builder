@@ -1,8 +1,13 @@
 <div class="card-wrapper" id="card">
-  <div class="card-top">
+  <div
+    class="card-top"
+    [ngStyle]="{
+      'background-image': 'url(/assets/images/' + vehicle.id + '.jpg)'
+    }"
+  >
     <div class="left">
       <p class="vehicle-type">{{ vehicle.model }}</p>
-      <h3 class="vehicle-name">AUTOMATORT</h3>
+      <h3 class="vehicle-name">NAME OF VEHICLE</h3>
     </div>
     <div class="right">
       <div class="dice-box">

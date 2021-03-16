@@ -16,13 +16,13 @@
         "id": 10,
         "type": "Vehicle",
         "name": "Full Throttle",
-        "effects": "This vehicle considers the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
+        "effects": "Consider the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
       },
       {
         "id": 15,
         "type": "Vehicle",
         "name": "Pivot",
-        "effects": "At the start of this vehicle’s activation, if this vehicle’s current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
+        "effects": "At the start of the activation, if current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
       }
     ]
   },
@@ -43,13 +43,13 @@
         "id": 10,
         "type": "Vehicle",
         "name": "Full Throttle",
-        "effects": "This vehicle considers the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
+        "effects": "Consider the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
       },
       {
         "id": 15,
         "type": "Vehicle",
         "name": "Pivot",
-        "effects": "At the start of this vehicle’s activation, if this vehicle’s current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
+        "effects": "At the start of the activation, if current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
       }
     ]
   },
@@ -91,13 +91,13 @@
         "id": 12,
         "type": "Vehicle",
         "name": "Jet Engine",
-        "effects": "A vehicle with a jet engine counts as having a Nitro Booster with infinite ammo tokens. This vehicle automatically explodes when it is wrecked. A vehicle with a jet engine MUST use the Nitro Booster every time it activates."
+        "effects": "Count as having a Nitro Booster with infinite ammo tokens. Automatically explodes when it's wrecked. MUST use the Nitro Booster every time it activates."
       },
       {
         "id": 67,
         "type": "Upgrade",
         "name": "Nitro Booster",
-        "effects": "This vehicle may declare that it is using this item at the start of any activation. This vehicle activates twice during this activation. During its first activation, this vehicle may only select the long straight template as its maneuver, does not make a skid check and must skip its attack step. After the first activation, this vehicle gains hazard tokens until it has 5 hazard tokens. During the second activation, this vehicle is free to choose a maneuver as normal, must make a skid check as normal, and may take its attack step as normal. After the second activation, this vehicle gains hazard tokens until it has 5 hazard tokens.",
+        "effects": "Rulebook, page 84.",
         "book": "TX2"
       }
     ]
@@ -147,7 +147,7 @@
         "id": 56,
         "type": "Vehicle",
         "name": "Slip Away",
-        "effects": "If this vehicle is targeted with a tailgate, T-bone or sideswipe smash attack, and this vehicle declares evade as its reaction, this vehicle may perform a free activation immediately after the active vehicle completes its activation. This free activation does not count as the vehicle’s activation this gear phase. Note: Use of the Slip Away rule can allow this vehicle to activate twice in a row; twice in one gear phase; or once in a gear phase that it does not qualify to activate in (and it might then stickshift and qualify late in that phase). Friendly vehicles can trigger this effect.",
+        "effects": "If this vehicle is targeted with a tailgate, T-bone or sideswipe smash attack, and this vehicle declares evade as its reaction, this vehicle may perform a free activation immediately after the active vehicle completes its activation. This free activation does not count as the vehicle’s activation this gear phase. Friendly vehicles can trigger this effect.",
         "book": "Core"
       }
     ]
@@ -183,7 +183,7 @@
         "id": 49,
         "type": "Vehicle",
         "name": "Infuriating Jingle",
-        "effects": "Vehicles  that  target  this  vehicle  with  a  SMASH  ATTACK  during  a collision receive no hazard tokens during step 6 of the collision resolution.",
+        "effects": "Vehicles that target this vehicle with a SMASH ATTACK during a collision receive no hazard tokens during step 6 of the collision resolution.",
         "book": "TX3"
       }
     ]
@@ -205,14 +205,14 @@
         "id": 58,
         "type": "Vehicle",
         "name": "Uppers",
-        "effects": "If  this  vehicle  is  involved  in  a  collision  in  which  both  vehicles  declare  an  evade, both vehicles must declare a single stick-shift up immediately after the collision is resolved (gaining a hazard token as per the normal stick-shift rules). If either vehicle is already at its max gear, the stick-shift does not affect that vehicle’s current gear, but that vehicle does gain a hazard token.",
+        "effects": "If involved in a collision in which both declare an evade, both must declare a single stick-shift up immediately after the collision (gaining a hazard token as normal). If either vehicle is at max gear, the stick-shift does not affect his gear, but gain a hazard token.",
         "book": "TX3"
       },
       {
         "id": 47,
         "type": "Vehicle",
         "name": "Downers",
-        "effects": "When  this  vehicle  declares  a  SMASH  ATTACK  during  its  activation  remove  2 hazard tokens from the target vehicle, and then reduce the target vehicle’s crew value by 1 until the end of the phase.",
+        "effects": "If he declares a SMASH ATTACK, remove 2 hazard tokens from the target, and reduce his crew by 1 until the end of the phase.",
         "book": "TX3"
       }
     ]
@@ -234,7 +234,7 @@
         "id": 51,
         "type": "Vehicle",
         "name": "Mobile Garage",
-        "effects": "If this vehicle starts its activation within medium range of one or more wrecks, it may reduce its crew value by any amount, until the end of the game, to flip a single target wreck back over to an active vehicle. The recovered vehicle gains D6 hull points and 1 crew for each crew this vehicle reduced by this effect, up to a maximum of the recovered vehicle’s starting hull and crew values.",
+        "effects": "If he starts its activation within medium range of one or more wrecks, it may reduce its crew by any amount, until the end of the game, to flip a single target wreck back over to an active vehicle. The recovered vehicle gains D6 hull points and 1 crew for each crew this vehicle reduced by this effect, up to a maximum of the recovered vehicle’s starting hull and crew values.",
         "book": "TX3"
       }
     ]
@@ -263,7 +263,7 @@
         "id": 46,
         "type": "Vehicle",
         "name": "Up and Over",
-        "effects": "After resolving a collision with a Bike, Buggy, Car, Pickup Truck, Performance Car, Lightweight Obstacle or Middleweight Obstacle during movement step 1.7, this vehicle may ignore the obstruction for the remainder of its movement step, as it drives right over the top of it.",
+        "effects": "After resolving a collision with a Bike, Buggy, Car, Pickup Truck, Performance Car, Lightweight Obstacle or Middleweight Obstacle during movement step 1.7, this vehicle may ignore the obstruction for the remainder of its movement step, driving over the top of it.",
         "book": "Core"
       }
     ]
@@ -313,21 +313,21 @@
         "id": 42,
         "type": "Vehicle",
         "name": "Articulated",
-        "effects": "MOVEMENT: If the trailer is dead straight in relation to the cab, the War Rig is said to be UNARTICULATED. If the trailer is pivoted in relation to the cab, the War Rig is said to be If a War Rig begins its movement step unarticulated and becomes articulated at any point during its movement step, it gains +1 hazard token.\nIf a War Rig begins its movement step articulated, it must end its movement step unarticulated, or gain +1 hazard token.\nSPIN RESULTS: Spin the whole model as a single object, ensuring that an articulated war rig is moved as a fixed object. Ensure that the cab and trailer end the spin in the same orientation relative to each other.\nWIPING OUT: When a War Rig suffers a wipeout, ignore Step 4. (I.e. do not rotate the War Rig.)\nJACKKNIFE: If a War Rig fails a flip check, do not resolving a flip and instead resolve a JACKKNIFE. The player to the left of the active player articulates the War Rig as they like, and then rotates the articulated cab and trailer as a single fixed object up to 90 degrees in either direction. Collision Window: The War Rig performs a 4D6 attack against itself that cannot be evaded.\nSHOOTING: When purchasing a weapon for a War Rig, the player must declare whether that weapons is installed on the cab or the trailer.\nWhen measuring range, place the shooting template touching either the cab or the trailer, depending on where the weapon is mounted.",
+        "effects": "Rulebook, page 117.",
         "book": "Core"
       },
       {
         "id": 52,
         "type": "Vehicle",
         "name": "Piledriver Attack",
-        "effects": "During this vehicle’s movement step, when this vehicle collides with another vehicle of a lighter weight-class, it may declare a PILEDRIVER ATTACK as its reaction.\nIf a vehicle is targeted with a piledriver attack, after resolving the collision, the controller of the vehicle that made the piledriver attack may place the target vehicle anywhere within short range of the target vehicle’s original position. The target vehicle is rotated to face any direction, such that it does not collide with the active vehicle again.",
+        "effects": "Rulebook, page 121.",
         "book": "Core"
       },
       {
         "id": 57,
         "type": "Vehicle",
         "name": "Tanker Anchor",
-        "effects": "At the start of its activation, this vehicle may gain +1 hazard token to skip its movement step. This vehicle may then increase its current gear by 1.",
+        "effects": "At the start of its activation, it may gain +1 hazard token to skip its movement step. It may then increase its gear by 1.",
         "book": "Core"
       }
     ]
@@ -349,21 +349,21 @@
         "id": 40,
         "type": "Vehicle",
         "name": "Airwolf",
-        "effects": "At the start of this vehicle’s activation, this vehicle may make a single pivot about its centre point, up to 90 degrees.",
+        "effects": "At the start of its activation, it may make a pivot about its centre point, up to 90º.",
         "book": "Core"
       },
       {
         "id": 39,
         "type": "Vehicle",
         "name": "Airborne",
-        "effects": "This vehicle ignores obstructions, dropped weapons and terrain at all times, except that this vehicle may target other vehicles in its attack step. Other vehicles ignore this vehicle at all times, except that other vehicles may target this vehicle during their attack steps. This vehicle cannot be involved in collisions.",
+        "effects": "Ignores obstructions, dropped weapons and terrain at all times, except that it may target other vehicles in its attack step. Other vehicles ignore this one at all times, except that other vehicles may target this vehicle during their attack steps. This vehicle cannot be involved in collisions.",
         "book": "TX2"
       },
       {
         "id": 45,
         "type": "Vehicle",
         "name": "Bombs Away",
-        "effects": "When purchasing weapons, this vehicle may count dropped weapons as requiring 0 build slots.",
+        "effects": "Purchasing weapons, may count dropped weapons as requiring 0 build slots.",
         "book": "Core"
       }
     ]
@@ -385,21 +385,21 @@
         "id": 40,
         "type": "Vehicle",
         "name": "Airwolf",
-        "effects": "At the start of this vehicle’s activation, this vehicle may make a single pivot about its centre point, up to 90 degrees.",
+        "effects": "At the start of its activation, it may make a pivot about its centre point, up to 90º.",
         "book": "Core"
       },
       {
         "id": 39,
         "type": "Vehicle",
         "name": "Airborne",
-        "effects": "This vehicle ignores obstructions, dropped weapons and terrain at all times, except that this vehicle may target other vehicles in its attack step. Other vehicles ignore this vehicle at all times, except that other vehicles may target this vehicle during their attack steps. This vehicle cannot be involved in collisions.",
+        "effects": "Ignores obstructions, dropped weapons and terrain at all times, except that it may target other vehicles in its attack step. Other vehicles ignore this one at all times, except that other vehicles may target this vehicle during their attack steps. This vehicle cannot be involved in collisions.",
         "book": "TX2"
       },
       {
         "id": 45,
         "type": "Vehicle",
         "name": "Bombs Away",
-        "effects": "When purchasing weapons, this vehicle may count dropped weapons as requiring 0 build slots.",
+        "effects": "Purchasing weapons, may count dropped weapons as requiring 0 build slots.",
         "book": "Core"
       }
     ]
@@ -421,21 +421,21 @@
         "id": 43,
         "type": "Vehicle",
         "name": "Battle Taxi",
-        "effects": "Any weapon with the “Crew fired” special rule gains the “Blitz” special rule when purchased for this vehicle.",
+        "effects": "Any weapon with the “Crew fired” rule gains the “Blitz” special rule when purchased for this vehicle.",
         "book": "TX3"
       },
       {
         "id": 5,
         "type": "Weapon",
         "name": "Blitz",
-        "effects": "This weapon may have any number of crewmembers assigned to it during the attack step, and may attack once for each crewmember so assigned. If the weapon has ammo tokens, an ammo token mustbe discarded separately for each separate attack.",
+        "effects": "This weapon may have any number of crew assigned to it during the attack step, and may attack once for each crew assigned. If weapon has ammo tokens, an ammo token must be discarded for each separate attack.",
         "book": "Core"
       },
       {
         "id": 55,
         "type": "Vehicle",
         "name": "Sardines",
-        "effects": "This vehicle may not have its crew value increased above 6.",
+        "effects": "May not have its crew above 6.",
         "book": "TX3"
       }
     ]
@@ -457,21 +457,21 @@
         "id": 46,
         "type": "Vehicle",
         "name": "Up and Over",
-        "effects": "After resolving a collision with a Bike, Buggy, Car, Pickup Truck, Performance Car, Lightweight Obstacle or Middleweight Obstacle during movement step 1.7, this vehicle may ignore the obstruction for the remainder of its movement step, as it drives right over the top of it.",
+        "effects": "After resolving a collision with a Bike, Buggy, Car, Pickup Truck, Performance Car, Lightweight Obstacle or Middleweight Obstacle during movement step 1.7, it may ignore the obstruction, driving over the top.",
         "book": "Core"
       },
       {
-        "id": 53,
+        "id": 15,
         "type": "Vehicle",
         "name": "Pivot",
-        "effects": "At the start of this vehicle’s activation, if this vehicle’s current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction.",
+        "effects": "At start of activation, if gear is 1, may make a pivot to face any direction. It cannot cause a collision, or touching an obstruction.",
         "book": "Core"
       },
       {
         "id": 41,
         "type": "Vehicle",
         "name": "All Terrain",
-        "effects": "This vehicle may ignore the penalties for rough and treacherous surfaces.",
+        "effects": "May ignore the penalties for rough and treacherous surfaces.",
         "book": "Core"
       }
     ]

@@ -132,6 +132,7 @@ $text-shadow-8px: 0px 0px 8px #000;
     height: $height-bottom;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     justify-content: center;
     padding-bottom: 10px;
 
