@@ -16,7 +16,7 @@ export interface Vehicle {
 export interface Weapon {
   id: number;
   name: string;
-  dice: string;
+  attack: string;
   range: string;
   slots: number;
   cost: number;

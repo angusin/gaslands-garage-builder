@@ -1,7 +1,7 @@
 <div class="panel">
   <p class="panel-heading is-flex">
-    {{ vehicle.model }}
     <span class="tag is-normal">{{ vehicle.cost }}</span>
+    {{ vehicle.model }}
     <span class="build-slots"
       >{{ getSlotsFilled() }}/{{ vehicle.buildSlots }}</span
     >
@@ -16,8 +16,8 @@
     <span class="panel-icon">
       <i class="fas fa-bomb"></i>
     </span>
-    {{ weapon.name }}
     <span class="tag is-normal">{{ weapon.cost }}</span>
+    {{ weapon.name }}
     <span class="delete-button"
       ><i class="far fa-trash-alt" (click)="deleteWeapon(i)"></i
     ></span>
