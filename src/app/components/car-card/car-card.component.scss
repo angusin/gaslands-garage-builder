@@ -5,7 +5,33 @@ $height-middle: 60px;
 $height-bottom: 60px;
 $text-shadow-8px: 0px 0px 8px #000;
 
-.card-wrapper {
+.panel-heading {
+  .build-slots {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+  }
+  .delete-car-button {
+  }
+}
+
+.delete-button {
+  flex: 1;
+  text-align: end;
+  i {
+    cursor: pointer;
+  }
+}
+
+.weapon-block {
+  padding: 8px 20px;
+}
+
+/* .card-wrapper {
   height: 440px;
   width: 255px;
   border-radius: $card-border-radius;
@@ -144,4 +170,4 @@ $text-shadow-8px: 0px 0px 8px #000;
       margin: 0 2px;
     }
   }
-}
+} */

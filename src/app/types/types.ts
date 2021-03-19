@@ -9,19 +9,18 @@ export interface Vehicle {
   buildSlots: number;
   crew: number;
   cost: number;
-  upgrades: Upgrade[];
+  weapons: Weapon[];
   specialRules: SpecialRule[];
 }
 
-export interface Upgrade {
+export interface Weapon {
   id: number;
   name: string;
-  type: string;
-  attack: string;
+  dice: string;
   range: string;
-  buildSlots: number;
+  slots: number;
   cost: number;
-  specialRules: SpecialRule[];
+  rules: string;
 }
 
 export interface SpecialRule {

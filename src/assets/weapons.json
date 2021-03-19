@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Handgun",
+    "range": "Medium",
+    "dice": "1D6",
+    "rules": "Crew fired",
+    "slots": 0,
+    "cost": 0
+  },
+  {
+    "id": 2,
+    "name": "Machine Gun",
+    "range": "Double",
+    "dice": "2D6",
+    "rules": "",
+    "slots": 1,
+    "cost": 2
+  },
+  {
+    "id": 3,
+    "name": "Heavy Machine Gun",
+    "range": "Double",
+    "dice": "3D6",
+    "rules": "",
+    "slots": 1,
+    "cost": 3
+  },
+  {
+    "id": 4,
+    "name": "Minigun",
+    "range": "Double",
+    "dice": "4D6",
+    "rules": "",
+    "slots": 1,
+    "cost": 5
+  }
+]

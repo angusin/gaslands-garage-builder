@@ -1,18 +1,51 @@
-<div class="card">
-  <div class="card-content">
-    <div class="content">
-      <h4>{{ vehicle.model }}</h4>
-      {{ vehicle.weight }}
-      {{ vehicle.cost }}
-      {{ vehicle.upgrades }}
-      {{ vehicle.specialRules }}
+<div class="panel">
+  <p class="panel-heading is-flex">
+    {{ vehicle.model }}
+    <span class="tag is-normal">{{ vehicle.cost }}</span>
+    <span class="build-slots"
+      >{{ getSlotsFilled() }}/{{ vehicle.buildSlots }}</span
+    >
+    <span class="delete-car-button"
+      ><i class="far fa-trash-alt" (click)="deleteCar()"></i
+    ></span>
+  </p>
+  <div
+    class="panel-block weapon-block is-flex"
+    *ngFor="let weapon of vehicle.weapons; index as i"
+  >
+    <span class="panel-icon">
+      <i class="fas fa-bomb"></i>
+    </span>
+    {{ weapon.name }}
+    <span class="tag is-normal">{{ weapon.cost }}</span>
+    <span class="delete-button"
+      ><i class="far fa-trash-alt" (click)="deleteWeapon(i)"></i
+    ></span>
+  </div>
+  <div class="panel-block is-flex is-justify-content-space-evenly">
+    <button class="button is-link is-small" (click)="toggleModal()">
+      Add weapon
+    </button>
+    <button class="button is-link is-small">Add upgrade</button>
+  </div>
+</div>
+
+<div class="modal" [ngClass]="{ 'is-active': modalIsActive }">
+  <div class="modal-background" (click)="toggleModal()"></div>
+  <div class="card">
+    <div class="card-content">
+      <div class="content">
+        <app-weapons-list
+          (addWeapon)="addWeaponToCar($event)"
+        ></app-weapons-list>
+      </div>
     </div>
   </div>
-  <footer class="card-footer">
-    <a href="#" class="card-footer-item">Edit</a>
-    <a href="#" class="card-footer-item">Weapons and Accesories</a>
-    <a href="#" class="card-footer-item" (click)="deleteCar()">Delete</a>
-  </footer>
+  <button
+    class="modal-close is-large"
+    aria-label="close"
+    (click)="toggleModal()"
+  ></button>
 </div>
 
 <!-- <div class="card-wrapper" id="card">

@@ -10,7 +10,7 @@
     "buildSlots": 1,
     "crew": 1,
     "cost": 5,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 10,
@@ -37,7 +37,7 @@
     "buildSlots": 2,
     "crew": 2,
     "cost": 8,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 10,
@@ -64,7 +64,7 @@
     "buildSlots": 2,
     "crew": 2,
     "cost": 5,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 16,
@@ -85,7 +85,7 @@
     "buildSlots": 2,
     "crew": 1,
     "cost": 5,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 12,
@@ -113,7 +113,7 @@
     "buildSlots": 2,
     "crew": 2,
     "cost": 12,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": []
   },
   {
@@ -127,7 +127,7 @@
     "buildSlots": 3,
     "crew": 2,
     "cost": 15,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": []
   },
   {
@@ -141,7 +141,7 @@
     "buildSlots": 2,
     "crew": 1,
     "cost": 15,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 56,
@@ -163,7 +163,7 @@
     "buildSlots": 3,
     "crew": 3,
     "cost": 15,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": []
   },
   {
@@ -177,7 +177,7 @@
     "buildSlots": 2,
     "crew": 2,
     "cost": 5,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 49,
@@ -199,7 +199,7 @@
     "buildSlots": 3,
     "crew": 3,
     "cost": 25,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 58,
@@ -228,7 +228,7 @@
     "buildSlots": 3,
     "crew": 3,
     "cost": 25,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 51,
@@ -250,7 +250,7 @@
     "buildSlots": 2,
     "crew": 2,
     "cost": 25,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 41,
@@ -279,7 +279,7 @@
     "buildSlots": 5,
     "crew": 4,
     "cost": 25,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": []
   },
   {
@@ -293,7 +293,7 @@
     "buildSlots": 3,
     "crew": 8,
     "cost": 30,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": []
   },
   {
@@ -307,7 +307,7 @@
     "buildSlots": 5,
     "crew": 5,
     "cost": 40,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 42,
@@ -343,7 +343,7 @@
     "buildSlots": 0,
     "crew": 1,
     "cost": 10,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 40,
@@ -379,7 +379,7 @@
     "buildSlots": 4,
     "crew": 2,
     "cost": 30,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 40,
@@ -415,7 +415,7 @@
     "buildSlots": 1,
     "crew": 6,
     "cost": 35,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 43,
@@ -451,7 +451,7 @@
     "buildSlots": 4,
     "crew": 3,
     "cost": 40,
-    "upgrades": [],
+    "weapons": [],
     "specialRules": [
       {
         "id": 46,

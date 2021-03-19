@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Vehicle } from '../types/types';
+import { Vehicle, Weapon } from '../types/types';
 
 @Injectable({
   providedIn: 'root',
@@ -15,5 +15,12 @@ export class ServiceService implements OnInit {
       .get('assets/vehicles.json')
       .toPromise()
       .then(res => <Vehicle[]>res);
+  }
+
+  getWeapons(): Promise<Weapon[]> {
+    return this.httpClient
+      .get('assets/weapons.json')
+      .toPromise()
+      .then(res => <Weapon[]>res);
   }
 }

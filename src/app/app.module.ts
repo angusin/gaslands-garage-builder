@@ -12,6 +12,7 @@ import { FormBuilderComponent } from './components/form-builder/form-builder.com
 import { CarListComponent } from './components/car-list/car-list.component';
 import { CarSelectorPageComponent } from './pages/car-selector-page/car-selector-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { WeaponsListComponent } from './components/weapons-list/weapons-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
     CarListComponent,
     CarSelectorPageComponent,
     MainPageComponent,
+    WeaponsListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, TableModule],
   providers: [],

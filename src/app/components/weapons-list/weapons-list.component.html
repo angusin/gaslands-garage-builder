@@ -1,0 +1,25 @@
+<table class="table is-striped is-fullwidth">
+  <thead>
+    <tr>
+      <th>Add</th>
+      <th>Weapon Name</th>
+      <th>Attack</th>
+      <th>Slots</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let weapon of weapons; index as i">
+      <td>
+        <i
+          class="fas fa-plus-circle fa-lg"
+          (click)="addWeaponToCar(weapon)"
+        ></i>
+      </td>
+      <td>{{ weapon.name }}</td>
+      <td>{{ weapon.dice }}</td>
+      <td>{{ weapon.slots }}</td>
+      <td>{{ weapon.cost }}</td>
+    </tr>
+  </tbody>
+</table>
