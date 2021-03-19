@@ -1,38 +1,344 @@
 [
   {
     "id": 1,
-    "name": "Handgun",
-    "range": "Medium",
-    "dice": "1D6",
-    "rules": "Crew fired",
-    "slots": 0,
-    "cost": 0
+    "name": "125mm Cannon",
+    "attack": "8D6",
+    "range": "Double",
+    "slots": 3,
+    "cost": 6,
+    "rules": "Ammo 3. Blast. Page 72."
   },
   {
     "id": 2,
-    "name": "Machine Gun",
+    "name": "Arc Lightning Projector",
+    "attack": "6D6",
     "range": "Double",
-    "dice": "2D6",
-    "rules": "",
-    "slots": 1,
-    "cost": 2
+    "slots": 2,
+    "cost": 6,
+    "rules": "Ammo 1. Electrical. Page 73."
   },
   {
     "id": 3,
-    "name": "Heavy Machine Gun",
+    "name": "BFG",
+    "attack": "10D6",
     "range": "Double",
-    "dice": "3D6",
-    "rules": "",
-    "slots": 1,
-    "cost": 3
+    "slots": 3,
+    "cost": 1,
+    "rules": "Ammo 1. Page 73."
   },
   {
     "id": 4,
-    "name": "Minigun",
+    "name": "Bazooka",
+    "attack": "3D6",
     "range": "Double",
-    "dice": "4D6",
-    "rules": "",
+    "slots": 2,
+    "cost": 4,
+    "rules": "Ammo 3. Blast."
+  },
+  {
+    "id": 5,
+    "name": "Blunderbuss",
+    "attack": "2D6",
+    "range": "Small Burst",
+    "slots": 0,
+    "cost": 2,
+    "rules": "Crew Fired. Splash."
+  },
+  {
+    "id": 6,
+    "name": "Caltrop Dropper",
+    "attack": "2D6",
+    "range": "Dropped",
     "slots": 1,
-    "cost": 5
+    "cost": 1,
+    "rules": "Ammo 3. Small Burst. Page 79."
+  },
+  {
+    "id": 7,
+    "name": "Combat Laser",
+    "attack": "3D6",
+    "range": "Double",
+    "slots": 1,
+    "cost": 5,
+    "rules": "Splash."
+  },
+  {
+    "id": 8,
+    "name": "Death Ray",
+    "attack": "3D6",
+    "range": "Double",
+    "slots": 1,
+    "cost": 3,
+    "rules": "Ammo 1. Electrical. Page 73."
+  },
+  {
+    "id": 9,
+    "name": "Flamethrower",
+    "attack": "6D6",
+    "range": "Large Burst",
+    "slots": 2,
+    "cost": 4,
+    "rules": "Ammo 3. Splash. Fire. Indirect."
+  },
+  {
+    "id": 10,
+    "name": "Gas Grenades",
+    "attack": "1D6*",
+    "range": "Medium",
+    "slots": 0,
+    "cost": 1,
+    "rules": "Ammo 5. Crew Fired. Indirect. Blitz. Page 76."
+  },
+  {
+    "id": 11,
+    "name": "Glue Dropper",
+    "attack": "-",
+    "range": "Dropped",
+    "slots": 1,
+    "cost": 1,
+    "rules": "Ammo 1. Large Burst. Page 79."
+  },
+  {
+    "id": 12,
+    "name": "Grabber Arm",
+    "attack": "3D6",
+    "range": "Short",
+    "slots": 1,
+    "cost": 6,
+    "rules": "Page 73."
+  },
+  {
+    "id": 13,
+    "name": "Grav Gun",
+    "attack": "3D6*",
+    "range": "Double",
+    "slots": 1,
+    "cost": 2,
+    "rules": "Ammo 1. Electrical. Page 73."
+  },
+  {
+    "id": 14,
+    "name": "Grenades",
+    "attack": "1D6",
+    "range": "Medium",
+    "slots": 0,
+    "cost": 1,
+    "rules": "Ammo 5. Crew Fired. Blast. Indirect. Blitz."
+  },
+  {
+    "id": 15,
+    "name": "Handgun",
+    "attack": "1D6",
+    "range": "Medium",
+    "slots": 0,
+    "cost": 0,
+    "rules": "Crew Fired."
+  },
+  {
+    "id": 16,
+    "name": "Harpoon",
+    "attack": "5D6*",
+    "range": "Double",
+    "slots": 1,
+    "cost": 2,
+    "rules": "Page 74."
+  },
+  {
+    "id": 17,
+    "name": "Heavy Machine Gun",
+    "attack": "3D6",
+    "range": "Double",
+    "slots": 1,
+    "cost": 3,
+    "rules": ""
+  },
+  {
+    "id": 18,
+    "name": "Kinetic Super Booster",
+    "attack": "6D6*",
+    "range": "Double",
+    "slots": 2,
+    "cost": 6,
+    "rules": "Ammo 1. Electrical. Page 74."
+  },
+  {
+    "id": 19,
+    "name": "Machine Gun",
+    "attack": "2D6",
+    "range": "Double",
+    "slots": 1,
+    "cost": 2,
+    "rules": ""
+  },
+  {
+    "id": 20,
+    "name": "Magnetic Jammer",
+    "attack": "-",
+    "range": "Double",
+    "slots": 0,
+    "cost": 2,
+    "rules": "Electrical. Page 74."
+  },
+  {
+    "id": 21,
+    "name": "Magnum",
+    "attack": "1D6",
+    "range": "Double",
+    "slots": 0,
+    "cost": 3,
+    "rules": "Crew Fired. Blast."
+  },
+  {
+    "id": 22,
+    "name": "Mine Dropper",
+    "attack": "4D6",
+    "range": "Dropped",
+    "slots": 1,
+    "cost": 1,
+    "rules": "Ammo 3. Small Burst. Blast. Page 79."
+  },
+  {
+    "id": 23,
+    "name": "Minigun",
+    "attack": "4D6",
+    "range": "Double",
+    "slots": 1,
+    "cost": 5,
+    "rules": ""
+  },
+  {
+    "id": 24,
+    "name": "Molotov Cocktails",
+    "attack": "1D6",
+    "range": "Medium",
+    "slots": 0,
+    "cost": 1,
+    "rules": "Ammo 5. Crew Fired. Fire. Indirect. Blitz."
+  },
+  {
+    "id": 25,
+    "name": "Mortar",
+    "attack": "4D6",
+    "range": "Double",
+    "slots": 1,
+    "cost": 4,
+    "rules": "Ammo 3. Indirect."
+  },
+  {
+    "id": 26,
+    "name": "Napalm Dropper",
+    "attack": "4D6",
+    "range": "Dropped",
+    "slots": 1,
+    "cost": 1,
+    "rules": "Ammo 3. Small Burst. Fire. Page 79."
+  },
+  {
+    "id": 27,
+    "name": "Oil Slick Dropper",
+    "attack": "-",
+    "range": "Dropped",
+    "slots": 0,
+    "cost": 2,
+    "rules": "Ammo 3. Large Burst. Page 79."
+  },
+  {
+    "id": 28,
+    "name": "RC Car Bombs",
+    "attack": "4D6",
+    "range": "Dropped",
+    "slots": 0,
+    "cost": 3,
+    "rules": "Ammo 3. Large Burst. Page 79."
+  },
+  {
+    "id": 29,
+    "name": "Rockets",
+    "attack": "6D6",
+    "range": "Double",
+    "slots": 2,
+    "cost": 5,
+    "rules": "Ammo 3."
+  },
+  {
+    "id": 30,
+    "name": "Sentry Gun",
+    "attack": "2D6",
+    "range": "Dropped",
+    "slots": 0,
+    "cost": 3,
+    "rules": "Ammo 3. Large Burst. Page 80."
+  },
+  {
+    "id": 31,
+    "name": "Shotgun",
+    "attack": "*",
+    "range": "Long",
+    "slots": 0,
+    "cost": 4,
+    "rules": "Crew Fired. Page 77."
+  },
+  {
+    "id": 32,
+    "name": "Smoke Dropper",
+    "attack": "-",
+    "range": "Dropped",
+    "slots": 0,
+    "cost": 1,
+    "rules": "Ammo 3. Large Burst. Page 80."
+  },
+  {
+    "id": 33,
+    "name": "Steel Nets",
+    "attack": "3D6*",
+    "range": "Short",
+    "slots": 0,
+    "cost": 2,
+    "rules": "Crew Fired. Blast. Page 77."
+  },
+  {
+    "id": 34,
+    "name": "Submachine Gun",
+    "attack": "3D6",
+    "range": "Medium",
+    "slots": 0,
+    "cost": 5,
+    "rules": "Crew Fired."
+  },
+  {
+    "id": 35,
+    "name": "Thumper",
+    "attack": "-",
+    "range": "Medium",
+    "slots": 2,
+    "cost": 4,
+    "rules": "Ammo 1. Electrical. Indirect. 360-degree. Page 74."
+  },
+  {
+    "id": 36,
+    "name": "Wall of Amplifiers",
+    "attack": "-",
+    "range": "Medium",
+    "slots": 3,
+    "cost": 4,
+    "rules": "360-degree. Page 74."
+  },
+  {
+    "id": 37,
+    "name": "Wreck Lobber",
+    "attack": "-",
+    "range": "Double/Dropped",
+    "slots": 4,
+    "cost": 4,
+    "rules": "Ammo 3. Page 75."
+  },
+  {
+    "id": 38,
+    "name": "Wrecking Ball",
+    "attack": "*",
+    "range": "Short",
+    "slots": 3,
+    "cost": 2,
+    "rules": "Page 76."
   }
 ]

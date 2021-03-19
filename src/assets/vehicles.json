@@ -1,81 +1,6 @@
 [
   {
     "id": 1,
-    "model": "Bike",
-    "name": "",
-    "weight": "Lightweight",
-    "hullPoints": 4,
-    "handling": 5,
-    "maxGear": 6,
-    "buildSlots": 1,
-    "crew": 1,
-    "cost": 5,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 10,
-        "type": "Vehicle",
-        "name": "Full Throttle",
-        "effects": "Consider the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
-      },
-      {
-        "id": 15,
-        "type": "Vehicle",
-        "name": "Pivot",
-        "effects": "At the start of the activation, if current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "model": "Bike with Sidecar",
-    "name": "",
-    "weight": "Lightweight",
-    "hullPoints": 4,
-    "handling": 5,
-    "maxGear": 6,
-    "buildSlots": 2,
-    "crew": 2,
-    "cost": 8,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 10,
-        "type": "Vehicle",
-        "name": "Full Throttle",
-        "effects": "Consider the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
-      },
-      {
-        "id": 15,
-        "type": "Vehicle",
-        "name": "Pivot",
-        "effects": "At the start of the activation, if current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "model": "Buggy / Trike",
-    "name": "",
-    "weight": "Lightweight",
-    "hullPoints": 6,
-    "handling": 4,
-    "maxGear": 6,
-    "buildSlots": 2,
-    "crew": 2,
-    "cost": 5,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 16,
-        "type": "Vehicle",
-        "name": "Roll Cage",
-        "effects": "When this vehicle suffers a flip, this vehicle may choose to ignore the 2 hits received from the flip."
-      }
-    ]
-  },
-  {
-    "id": 4,
     "model": "Drag Racer",
     "name": "",
     "weight": "Lightweight",
@@ -103,7 +28,104 @@
     ]
   },
   {
+    "id": 2,
+    "model": "Bike",
+    "name": "",
+    "weight": "Lightweight",
+    "hullPoints": 4,
+    "handling": 5,
+    "maxGear": 6,
+    "buildSlots": 1,
+    "crew": 1,
+    "cost": 5,
+    "weapons": [],
+    "specialRules": [
+      {
+        "id": 10,
+        "type": "Vehicle",
+        "name": "Full Throttle",
+        "effects": "Consider the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
+      },
+      {
+        "id": 15,
+        "type": "Vehicle",
+        "name": "Pivot",
+        "effects": "At the start of the activation, if current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "model": "Buggy",
+    "name": "",
+    "weight": "Lightweight",
+    "hullPoints": 6,
+    "handling": 4,
+    "maxGear": 6,
+    "buildSlots": 2,
+    "crew": 2,
+    "cost": 6,
+    "weapons": [],
+    "specialRules": [
+      {
+        "id": 16,
+        "type": "Vehicle",
+        "name": "Roll Cage",
+        "effects": "When this vehicle suffers a flip, this vehicle may choose to ignore the 2 hits received from the flip."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "model": "Bike with Sidecar",
+    "name": "",
+    "weight": "Lightweight",
+    "hullPoints": 4,
+    "handling": 5,
+    "maxGear": 6,
+    "buildSlots": 2,
+    "crew": 2,
+    "cost": 8,
+    "weapons": [],
+    "specialRules": [
+      {
+        "id": 10,
+        "type": "Vehicle",
+        "name": "Full Throttle",
+        "effects": "Consider the long straight maneuver template to be permitted in any gear. The long straight is not considered either hazardous or trivial in any gear."
+      },
+      {
+        "id": 15,
+        "type": "Vehicle",
+        "name": "Pivot",
+        "effects": "At the start of the activation, if current gear is 1, this vehicle may make a pivot about its centre to face any direction. This pivot cannot cause a collision, and cannot leave this vehicle touching an obstruction."
+      }
+    ]
+  },
+  {
     "id": 5,
+    "model": "Ice-cream Truck",
+    "name": "",
+    "weight": "Middleweight",
+    "hullPoints": 10,
+    "handling": 2,
+    "maxGear": 4,
+    "buildSlots": 2,
+    "crew": 2,
+    "cost": 8,
+    "weapons": [],
+    "specialRules": [
+      {
+        "id": 49,
+        "type": "Vehicle",
+        "name": "Infuriating Jingle",
+        "effects": "Vehicles that target this vehicle with a SMASH ATTACK during a collision receive no hazard tokens during step 6 of the collision resolution.",
+        "book": "TX3"
+      }
+    ]
+  },
+  {
+    "id": 6,
     "model": "Car",
     "name": "",
     "weight": "Middleweight",
@@ -113,20 +135,6 @@
     "buildSlots": 2,
     "crew": 2,
     "cost": 12,
-    "weapons": [],
-    "specialRules": []
-  },
-  {
-    "id": 6,
-    "model": "Jeep",
-    "name": "",
-    "weight": "Middleweight",
-    "hullPoints": 10,
-    "handling": 3,
-    "maxGear": 5,
-    "buildSlots": 3,
-    "crew": 2,
-    "cost": 15,
     "weapons": [],
     "specialRules": []
   },
@@ -154,7 +162,7 @@
   },
   {
     "id": 8,
-    "model": "Pickup / Van / Tractor",
+    "model": "Truck",
     "name": "",
     "weight": "Middleweight",
     "hullPoints": 12,
@@ -168,172 +176,6 @@
   },
   {
     "id": 9,
-    "model": "Ice Cream Truck",
-    "name": "",
-    "weight": "Middleweight",
-    "hullPoints": 10,
-    "handling": 3,
-    "maxGear": 4,
-    "buildSlots": 2,
-    "crew": 2,
-    "cost": 5,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 49,
-        "type": "Vehicle",
-        "name": "Infuriating Jingle",
-        "effects": "Vehicles that target this vehicle with a SMASH ATTACK during a collision receive no hazard tokens during step 6 of the collision resolution.",
-        "book": "TX3"
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "model": "Ambulance",
-    "name": "",
-    "weight": "Middleweight",
-    "hullPoints": 12,
-    "handling": 2,
-    "maxGear": 5,
-    "buildSlots": 3,
-    "crew": 3,
-    "cost": 25,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 58,
-        "type": "Vehicle",
-        "name": "Uppers",
-        "effects": "If involved in a collision in which both declare an evade, both must declare a single stick-shift up immediately after the collision (gaining a hazard token as normal). If either vehicle is at max gear, the stick-shift does not affect his gear, but gain a hazard token.",
-        "book": "TX3"
-      },
-      {
-        "id": 47,
-        "type": "Vehicle",
-        "name": "Downers",
-        "effects": "If he declares a SMASH ATTACK, remove 2 hazard tokens from the target, and reduce his crew by 1 until the end of the phase.",
-        "book": "TX3"
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "model": "Motorhome",
-    "name": "",
-    "weight": "Middleweight",
-    "hullPoints": 10,
-    "handling": 3,
-    "maxGear": 4,
-    "buildSlots": 3,
-    "crew": 3,
-    "cost": 25,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 51,
-        "type": "Vehicle",
-        "name": "Mobile Garage",
-        "effects": "If he starts its activation within medium range of one or more wrecks, it may reduce its crew by any amount, until the end of the game, to flip a single target wreck back over to an active vehicle. The recovered vehicle gains D6 hull points and 1 crew for each crew this vehicle reduced by this effect, up to a maximum of the recovered vehicle’s starting hull and crew values.",
-        "book": "TX3"
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "model": "Monster Truck",
-    "name": "",
-    "weight": "Heavyweight",
-    "hullPoints": 10,
-    "handling": 3,
-    "maxGear": 4,
-    "buildSlots": 2,
-    "crew": 2,
-    "cost": 25,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 41,
-        "type": "Vehicle",
-        "name": "All Terrain",
-        "effects": "This vehicle may ignore the penalties for rough and treacherous surfaces.",
-        "book": "Core"
-      },
-      {
-        "id": 46,
-        "type": "Vehicle",
-        "name": "Up and Over",
-        "effects": "After resolving a collision with a Bike, Buggy, Car, Pickup Truck, Performance Car, Lightweight Obstacle or Middleweight Obstacle during movement step 1.7, this vehicle may ignore the obstruction for the remainder of its movement step, driving over the top of it.",
-        "book": "Core"
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "model": "Heavy Truck",
-    "name": "",
-    "weight": "Heavyweight",
-    "hullPoints": 14,
-    "handling": 2,
-    "maxGear": 3,
-    "buildSlots": 5,
-    "crew": 4,
-    "cost": 25,
-    "weapons": [],
-    "specialRules": []
-  },
-  {
-    "id": 14,
-    "model": "Bus / Coach",
-    "name": "",
-    "weight": "Heavyweight",
-    "hullPoints": 16,
-    "handling": 2,
-    "maxGear": 3,
-    "buildSlots": 3,
-    "crew": 8,
-    "cost": 30,
-    "weapons": [],
-    "specialRules": []
-  },
-  {
-    "id": 15,
-    "model": "War Rig",
-    "name": "",
-    "weight": "Heavyweight",
-    "hullPoints": 20,
-    "handling": 2,
-    "maxGear": 4,
-    "buildSlots": 5,
-    "crew": 5,
-    "cost": 40,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 42,
-        "type": "Vehicle",
-        "name": "Articulated",
-        "effects": "Rulebook, page 117.",
-        "book": "Core"
-      },
-      {
-        "id": 52,
-        "type": "Vehicle",
-        "name": "Piledriver Attack",
-        "effects": "Rulebook, page 121.",
-        "book": "Core"
-      },
-      {
-        "id": 57,
-        "type": "Vehicle",
-        "name": "Tanker Anchor",
-        "effects": "At the start of its activation, it may gain +1 hazard token to skip its movement step. It may then increase its gear by 1.",
-        "book": "Core"
-      }
-    ]
-  },
-  {
-    "id": 16,
     "model": "Gyrocopter",
     "name": "",
     "weight": "Middleweight",
@@ -369,7 +211,93 @@
     ]
   },
   {
-    "id": 17,
+    "id": 10,
+    "model": "Ambulance",
+    "name": "",
+    "weight": "Middleweight",
+    "hullPoints": 12,
+    "handling": 2,
+    "maxGear": 5,
+    "buildSlots": 3,
+    "crew": 3,
+    "cost": 20,
+    "weapons": [],
+    "specialRules": [
+      {
+        "id": 58,
+        "type": "Vehicle",
+        "name": "Uppers",
+        "effects": "If involved in a collision in which both declare an evade, both must declare a single stick-shift up immediately after the collision (gaining a hazard token as normal). If either vehicle is at max gear, the stick-shift does not affect his gear, but gain a hazard token.",
+        "book": "TX3"
+      },
+      {
+        "id": 47,
+        "type": "Vehicle",
+        "name": "Downers",
+        "effects": "If he declares a SMASH ATTACK, remove 2 hazard tokens from the target, and reduce his crew by 1 until the end of the phase.",
+        "book": "TX3"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "model": "Monster Truck",
+    "name": "",
+    "weight": "Heavyweight",
+    "hullPoints": 10,
+    "handling": 3,
+    "maxGear": 4,
+    "buildSlots": 2,
+    "crew": 2,
+    "cost": 25,
+    "weapons": [],
+    "specialRules": [
+      {
+        "id": 41,
+        "type": "Vehicle",
+        "name": "All Terrain",
+        "effects": "This vehicle may ignore the penalties for rough and treacherous surfaces.",
+        "book": "Core"
+      },
+      {
+        "id": 46,
+        "type": "Vehicle",
+        "name": "Up and Over",
+        "effects": "After resolving a collision with a Bike, Buggy, Car, Pickup Truck, Performance Car, Lightweight Obstacle or Middleweight Obstacle during movement step 1.7, this vehicle may ignore the obstruction for the remainder of its movement step, driving over the top of it.",
+        "book": "Core"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "model": "Heavy Truck",
+    "name": "",
+    "weight": "Heavyweight",
+    "hullPoints": 14,
+    "handling": 2,
+    "maxGear": 3,
+    "buildSlots": 5,
+    "crew": 4,
+    "cost": 25,
+    "weapons": [],
+    "specialRules": []
+  },
+  {
+    "id": 13,
+    "model": "Bus",
+    "name": "",
+    "weight": "Heavyweight",
+    "hullPoints": 16,
+    "handling": 2,
+    "maxGear": 3,
+    "buildSlots": 3,
+    "crew": 8,
+    "cost": 30,
+    "weapons": [],
+    "specialRules": []
+  },
+  {
+    "id": 14,
     "model": "Helicopter",
     "name": "",
     "weight": "Heavyweight",
@@ -377,7 +305,7 @@
     "handling": 3,
     "maxGear": 4,
     "buildSlots": 4,
-    "crew": 2,
+    "crew": 3,
     "cost": 30,
     "weapons": [],
     "specialRules": [
@@ -405,43 +333,7 @@
     ]
   },
   {
-    "id": 18,
-    "model": "APC",
-    "name": "",
-    "weight": "Heavyweight",
-    "hullPoints": 16,
-    "handling": 3,
-    "maxGear": 4,
-    "buildSlots": 1,
-    "crew": 6,
-    "cost": 35,
-    "weapons": [],
-    "specialRules": [
-      {
-        "id": 43,
-        "type": "Vehicle",
-        "name": "Battle Taxi",
-        "effects": "Any weapon with the “Crew fired” rule gains the “Blitz” special rule when purchased for this vehicle.",
-        "book": "TX3"
-      },
-      {
-        "id": 5,
-        "type": "Weapon",
-        "name": "Blitz",
-        "effects": "This weapon may have any number of crew assigned to it during the attack step, and may attack once for each crew assigned. If weapon has ammo tokens, an ammo token must be discarded for each separate attack.",
-        "book": "Core"
-      },
-      {
-        "id": 55,
-        "type": "Vehicle",
-        "name": "Sardines",
-        "effects": "May not have its crew above 6.",
-        "book": "TX3"
-      }
-    ]
-  },
-  {
-    "id": 19,
+    "id": 15,
     "model": "Tank",
     "name": "",
     "weight": "Heavyweight",
@@ -472,6 +364,42 @@
         "type": "Vehicle",
         "name": "All Terrain",
         "effects": "May ignore the penalties for rough and treacherous surfaces.",
+        "book": "Core"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "model": "War Rig",
+    "name": "",
+    "weight": "Heavyweight",
+    "hullPoints": 26,
+    "handling": 2,
+    "maxGear": 4,
+    "buildSlots": 5,
+    "crew": 5,
+    "cost": 40,
+    "weapons": [],
+    "specialRules": [
+      {
+        "id": 42,
+        "type": "Vehicle",
+        "name": "Articulated",
+        "effects": "Rulebook, page 117.",
+        "book": "Core"
+      },
+      {
+        "id": 52,
+        "type": "Vehicle",
+        "name": "Piledriver Attack",
+        "effects": "Rulebook, page 121.",
+        "book": "Core"
+      },
+      {
+        "id": 57,
+        "type": "Vehicle",
+        "name": "Tanker Anchor",
+        "effects": "At the start of its activation, it may gain +1 hazard token to skip its movement step. It may then increase its gear by 1.",
         "book": "Core"
       }
     ]
