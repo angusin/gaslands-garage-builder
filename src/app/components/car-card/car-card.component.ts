@@ -21,7 +21,7 @@ export class CarCardComponent implements OnInit {
 
   addWeaponToCar(weapon: Weapon): void {
     this.checkIfSlotsComplete(weapon.slots)
-      ? alert('Slots full')
+      ? alert('No free slots for this weapon.')
       : this.store.addWeaponToCar(this.vehicle, weapon);
     this.toggleModal();
   }

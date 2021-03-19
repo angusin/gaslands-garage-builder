@@ -13,10 +13,10 @@
     class="panel-block weapon-block is-flex"
     *ngFor="let weapon of vehicle.weapons; index as i"
   >
+    <span class="tag is-normal">{{ weapon.cost }}</span>
     <span class="panel-icon">
       <i class="fas fa-bomb"></i>
     </span>
-    <span class="tag is-normal">{{ weapon.cost }}</span>
     {{ weapon.name }}
     <span class="delete-button"
       ><i class="far fa-trash-alt" (click)="deleteWeapon(i)"></i
