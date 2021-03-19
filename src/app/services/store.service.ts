@@ -31,4 +31,18 @@ export class StoreService {
       if (itemCar === car) itemCar.weapons.splice(weaponIndex, 1);
     });
   }
+
+  @action updateGarage(cars: Vehicle[]) {
+    this.carsInGarage = cars;
+  }
+
+  saveToLocalStorage() {
+    localStorage.setItem('myGarage', JSON.stringify(this.carsInGarage));
+    alert('Garage saved');
+  }
+
+  getFromLocalStorage() {
+    this.updateGarage(JSON.parse(localStorage.getItem('myGarage')));
+    alert('Garage loaded');
+  }
 }

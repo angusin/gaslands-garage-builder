@@ -26,7 +26,7 @@ export class CarListComponent implements OnInit {
     this.service.getVehicles().then(vehicles => (this.vehicles = vehicles));
     this.configuration = { ...DefaultConfig };
     this.configuration.searchEnabled = true;
-    this.configuration.rows = 20;
+    this.configuration.rows = 16;
     this.configuration.paginationEnabled = false;
     this.configuration.fixedColumnWidth = false;
     this.configuration.horizontalScroll = true;

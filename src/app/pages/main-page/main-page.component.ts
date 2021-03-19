@@ -37,4 +37,12 @@ export class MainPageComponent {
   deleteCar(carIndex) {
     this.store.deleteCarFromGarage(carIndex);
   }
+
+  saveToLocalStorage() {
+    this.store.saveToLocalStorage();
+  }
+
+  getFromLocalStorage() {
+    this.store.getFromLocalStorage();
+  }
 }
