@@ -11,6 +11,7 @@
     "crew": 1,
     "cost": 5,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 12,
@@ -39,6 +40,7 @@
     "crew": 1,
     "cost": 5,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 10,
@@ -66,6 +68,7 @@
     "crew": 2,
     "cost": 6,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 16,
@@ -87,6 +90,7 @@
     "crew": 2,
     "cost": 8,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 10,
@@ -114,6 +118,7 @@
     "crew": 2,
     "cost": 8,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 49,
@@ -136,6 +141,7 @@
     "crew": 2,
     "cost": 12,
     "weapons": [],
+    "upgrades": [],
     "specialRules": []
   },
   {
@@ -150,6 +156,7 @@
     "crew": 1,
     "cost": 15,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 56,
@@ -172,6 +179,7 @@
     "crew": 3,
     "cost": 15,
     "weapons": [],
+    "upgrades": [],
     "specialRules": []
   },
   {
@@ -186,6 +194,7 @@
     "crew": 1,
     "cost": 10,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 40,
@@ -222,6 +231,7 @@
     "crew": 3,
     "cost": 20,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 58,
@@ -251,6 +261,7 @@
     "crew": 2,
     "cost": 25,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 41,
@@ -280,6 +291,7 @@
     "crew": 4,
     "cost": 25,
     "weapons": [],
+    "upgrades": [],
     "specialRules": []
   },
   {
@@ -294,6 +306,7 @@
     "crew": 8,
     "cost": 30,
     "weapons": [],
+    "upgrades": [],
     "specialRules": []
   },
   {
@@ -308,6 +321,7 @@
     "crew": 3,
     "cost": 30,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 40,
@@ -344,6 +358,7 @@
     "crew": 3,
     "cost": 40,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 46,
@@ -380,6 +395,7 @@
     "crew": 5,
     "cost": 40,
     "weapons": [],
+    "upgrades": [],
     "specialRules": [
       {
         "id": 42,

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { action, computed, observable } from 'mobx';
-import { Vehicle, Weapon } from './../types/types';
+import { Upgrade, Vehicle, Weapon } from './../types/types';
 
 @Injectable({
   providedIn: 'root',
@@ -29,6 +29,18 @@ export class StoreService {
   @action deleteWeaponFromCar(car: Vehicle, weaponIndex: number) {
     this.carsInGarage.forEach(itemCar => {
       if (itemCar === car) itemCar.weapons.splice(weaponIndex, 1);
+    });
+  }
+
+  @action addUpgradeToCar(car: Vehicle, upgrade: Upgrade) {
+    this.carsInGarage.forEach(itemCar => {
+      if (itemCar === car) itemCar.upgrades.push(upgrade);
+    });
+  }
+
+  @action deleteUpgradeFromCar(car: Vehicle, upgradeIndex: number) {
+    this.carsInGarage.forEach(itemCar => {
+      if (itemCar === car) itemCar.upgrades.splice(upgradeIndex, 1);
     });
   }
 

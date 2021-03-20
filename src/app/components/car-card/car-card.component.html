@@ -14,39 +14,40 @@
     *ngFor="let weapon of vehicle.weapons; index as i"
   >
     <span class="tag is-normal">{{ weapon.cost }}</span>
-    <span class="panel-icon">
-      <i class="fas fa-bomb"></i>
-    </span>
+    <span class="panel-icon"><i class="fas fa-bomb"></i></span>
     {{ weapon.name }}
     <span class="delete-button"
       ><i class="far fa-trash-alt" (click)="deleteWeapon(i)"></i
     ></span>
   </div>
+  <div
+    class="panel-block weapon-block is-flex"
+    *ngFor="let upgrade of vehicle.upgrades; index as i"
+  >
+    <span class="tag is-normal">{{ upgrade.cost }}</span>
+    <span class="panel-icon"><i class="fas fa-angle-double-up"></i></span>
+    {{ upgrade.name }}
+    <span class="delete-button"
+      ><i class="far fa-trash-alt" (click)="deleteUpgrade(i)"></i
+    ></span>
+  </div>
   <div class="panel-block is-flex is-justify-content-space-evenly">
-    <button class="button is-link is-small" (click)="toggleModal()">
+    <button class="button is-link is-small" (click)="toggleWeaponModal()">
       Add weapon
     </button>
-    <button class="button is-link is-small">Add upgrade</button>
+    <button class="button is-link is-small" (click)="toggleUpgradeModal()">
+      Add upgrade
+    </button>
   </div>
 </div>
 
-<div class="modal" [ngClass]="{ 'is-active': modalIsActive }">
-  <div class="modal-background" (click)="toggleModal()"></div>
-  <div class="card">
-    <div class="card-content">
-      <div class="content">
-        <app-weapons-list
-          (addWeapon)="addWeaponToCar($event)"
-        ></app-weapons-list>
-      </div>
-    </div>
-  </div>
-  <button
-    class="modal-close is-large"
-    aria-label="close"
-    (click)="toggleModal()"
-  ></button>
-</div>
+<app-modal [modalIsActive]="weaponModalIsActive">
+  <app-weapons-list (addWeapon)="addWeaponToCar($event)"></app-weapons-list>
+</app-modal>
+
+<app-modal [modalIsActive]="upgradeModalIsActive">
+  <app-upgrades-list (addUpgrade)="addUpgradeToCar($event)"></app-upgrades-list>
+</app-modal>
 
 <!-- <div class="card-wrapper" id="card">
   <div

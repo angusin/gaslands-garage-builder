@@ -13,6 +13,8 @@ import { CarListComponent } from './components/car-list/car-list.component';
 import { CarSelectorPageComponent } from './pages/car-selector-page/car-selector-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { WeaponsListComponent } from './components/weapons-list/weapons-list.component';
+import { UpgradesListComponent } from './components/upgrades-list/upgrades-list.component';
+import { ModalComponent } from './common/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { WeaponsListComponent } from './components/weapons-list/weapons-list.com
     CarSelectorPageComponent,
     MainPageComponent,
     WeaponsListComponent,
+    UpgradesListComponent,
+    ModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, TableModule],
   providers: [],

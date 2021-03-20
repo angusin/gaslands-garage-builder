@@ -1,0 +1,23 @@
+<table class="table is-striped is-fullwidth">
+  <thead>
+    <tr>
+      <th>Add</th>
+      <th>Upgrade Name</th>
+      <th>Slots</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let upgrade of upgrades; index as i">
+      <td>
+        <i
+          class="fas fa-plus-circle fa-lg"
+          (click)="addUpgradeToCar(upgrade)"
+        ></i>
+      </td>
+      <td>{{ upgrade.name }}</td>
+      <td>{{ upgrade.slots }}</td>
+      <td>{{ upgrade.cost }}</td>
+    </tr>
+  </tbody>
+</table>

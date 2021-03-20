@@ -24,14 +24,26 @@ export class MainPageComponent {
       car => car.weapons.length > 0
     );
     if (anyWeaponExist)
-      weaponsCost = weaponsCost = this.store.carsInGarage
+      weaponsCost = this.store.carsInGarage
         .map(car => car.weapons.map(weapon => weapon.cost))
         .reduce((acc, val) => acc.concat(val))
         .reduce((a, b) => a + b);
     else {
       weaponsCost = 0;
     }
-    return carsCost + weaponsCost;
+    let upgradesCost: number = 0;
+    const anyUpgradeExist: boolean = this.carsInGarage.some(
+      car => car.upgrades.length > 0
+    );
+    if (anyUpgradeExist)
+      upgradesCost = this.store.carsInGarage
+        .map(car => car.upgrades.map(upgrade => upgrade.cost))
+        .reduce((acc, val) => acc.concat(val))
+        .reduce((a, b) => a + b);
+    else {
+      upgradesCost = 0;
+    }
+    return carsCost + weaponsCost + upgradesCost;
   }
 
   deleteCar(carIndex) {

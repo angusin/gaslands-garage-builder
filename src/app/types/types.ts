@@ -10,6 +10,7 @@ export interface Vehicle {
   crew: number;
   cost: number;
   weapons: Weapon[];
+  upgrades: Upgrade[];
   specialRules: SpecialRule[];
 }
 
@@ -18,6 +19,14 @@ export interface Weapon {
   name: string;
   attack: string;
   range: string;
+  slots: number;
+  cost: number;
+  rules: string;
+}
+
+export interface Upgrade {
+  id: number;
+  name: string;
   slots: number;
   cost: number;
   rules: string;
