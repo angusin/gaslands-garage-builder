@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Upgrade, Vehicle, Weapon } from '../../types/types';
 import { StoreService } from '../../services/store.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-car-card',
@@ -12,7 +13,7 @@ export class CarCardComponent implements OnInit {
   weaponModalIsActive: boolean = false;
   upgradeModalIsActive: boolean = false;
 
-  constructor(private store: StoreService) {}
+  constructor(private store: StoreService, private toastr: ToastrService) {}
 
   ngOnInit(): void {}
 
@@ -22,14 +23,14 @@ export class CarCardComponent implements OnInit {
 
   addWeaponToCar(weapon: Weapon): void {
     this.checkIfSlotsComplete(weapon.slots)
-      ? alert('No free slots for this weapon.')
+      ? this.toastr.warning('No free slots for this weapon.')
       : this.store.addWeaponToCar(this.vehicle, weapon);
     this.toggleWeaponModal();
   }
 
   addUpgradeToCar(upgrade: Upgrade): void {
     this.checkIfSlotsComplete(upgrade.slots)
-      ? alert('No free slots for this upgrade.')
+      ? this.toastr.warning('No free slots for this upgrade.')
       : this.store.addUpgradeToCar(this.vehicle, upgrade);
     this.toggleUpgradeModal();
   }

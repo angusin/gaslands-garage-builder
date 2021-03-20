@@ -15,6 +15,9 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { WeaponsListComponent } from './components/weapons-list/weapons-list.component';
 import { UpgradesListComponent } from './components/upgrades-list/upgrades-list.component';
 import { ModalComponent } from './common/modal/modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,17 @@ import { ModalComponent } from './common/modal/modal.component';
     UpgradesListComponent,
     ModalComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, TableModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TableModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 2000,
+      positionClass: 'toast-bottom-center',
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

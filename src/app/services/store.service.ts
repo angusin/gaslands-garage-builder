@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { action, computed, observable } from 'mobx';
+import { action, observable } from 'mobx';
 import { Upgrade, Vehicle, Weapon } from './../types/types';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +9,7 @@ import { Upgrade, Vehicle, Weapon } from './../types/types';
 export class StoreService {
   @observable carsInGarage: Vehicle[] = [];
 
-  constructor() {}
+  constructor(private toastr: ToastrService) {}
 
   @action addCarToGarage(car: Vehicle) {
     this.carsInGarage.push(car);
@@ -18,6 +19,7 @@ export class StoreService {
     this.carsInGarage.forEach((item, index) => {
       if (item === car) this.carsInGarage.splice(index, 1);
     });
+    this.toastr.success('Car deleted.');
   }
 
   @action addWeaponToCar(car: Vehicle, weapon: Weapon) {
@@ -30,6 +32,7 @@ export class StoreService {
     this.carsInGarage.forEach(itemCar => {
       if (itemCar === car) itemCar.weapons.splice(weaponIndex, 1);
     });
+    this.toastr.success('Weapon deleted.');
   }
 
   @action addUpgradeToCar(car: Vehicle, upgrade: Upgrade) {
@@ -42,6 +45,7 @@ export class StoreService {
     this.carsInGarage.forEach(itemCar => {
       if (itemCar === car) itemCar.upgrades.splice(upgradeIndex, 1);
     });
+    this.toastr.success('Upgrade deleted.');
   }
 
   @action updateGarage(cars: Vehicle[]) {
@@ -50,11 +54,11 @@ export class StoreService {
 
   saveToLocalStorage() {
     localStorage.setItem('myGarage', JSON.stringify(this.carsInGarage));
-    alert('Garage saved');
+    this.toastr.success('Garage saved.');
   }
 
   getFromLocalStorage() {
     this.updateGarage(JSON.parse(localStorage.getItem('myGarage')));
-    alert('Garage loaded');
+    this.toastr.success('Garage fully loaded.');
   }
 }

@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bulma/css/bulma.min.css",
-              "node_modules/ngx-easy-table/style.css"
+              "node_modules/ngx-easy-table/style.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -45,7 +46,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
