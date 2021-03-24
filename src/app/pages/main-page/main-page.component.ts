@@ -57,4 +57,9 @@ export class MainPageComponent {
   getFromLocalStorage() {
     this.store.getFromLocalStorage();
   }
+
+  deleteEverything() {
+    this.store.carsInGarage = [];
+    this.store.deleteLocalStorage();
+  }
 }

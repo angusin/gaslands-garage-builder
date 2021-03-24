@@ -58,7 +58,17 @@ export class StoreService {
   }
 
   getFromLocalStorage() {
-    this.updateGarage(JSON.parse(localStorage.getItem('myGarage')));
-    this.toastr.success('Garage fully loaded.');
+    const garageEmpty: Vehicle[] = JSON.parse(localStorage.getItem('myGarage'));
+    if (garageEmpty.length <= 0) {
+      this.toastr.warning('No vehicles in the garage.');
+    } else {
+      this.updateGarage(JSON.parse(localStorage.getItem('myGarage')));
+      this.toastr.success('Garage fully loaded.');
+    }
+  }
+
+  deleteLocalStorage() {
+    localStorage.setItem('myGarage', JSON.stringify([]));
+    this.toastr.success('All vehicles deleted.');
   }
 }
