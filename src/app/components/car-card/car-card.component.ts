@@ -39,8 +39,8 @@ export class CarCardComponent implements OnInit {
     this.store.deleteWeaponFromCar(this.vehicle, weaponIndex);
   }
 
-  deleteUpgrade(upgradeIndex: number): void {
-    this.store.deleteUpgradeFromCar(this.vehicle, upgradeIndex);
+  deleteUpgrade(upgradeIndex: number, upgrade: Upgrade): void {
+    this.store.deleteUpgradeFromCar(this.vehicle, upgradeIndex, upgrade);
   }
 
   getWeightCharacter(weight: string): string {

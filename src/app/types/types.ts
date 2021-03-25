@@ -6,8 +6,10 @@ export interface Vehicle {
   hullPoints: number;
   handling: number;
   maxGear: number;
+  maxGearModified: number;
   buildSlots: number;
   crew: number;
+  crewModified: number;
   cost: number;
   weapons: Weapon[];
   upgrades: Upgrade[];
