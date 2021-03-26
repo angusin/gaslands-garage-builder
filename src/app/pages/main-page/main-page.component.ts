@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { computed } from 'mobx';
 import { StoreService } from './../../services/store.service';
+import { jsPDF } from 'jspdf';
+import autoTable from 'jspdf-autotable';
+import { Vehicle } from 'src/app/types/types';
 
 @Component({
   selector: 'app-main-page',
@@ -61,5 +64,121 @@ export class MainPageComponent {
   deleteEverything() {
     this.store.carsInGarage = [];
     this.store.deleteLocalStorage();
+  }
+
+  printPdf() {
+    const PDF = new jsPDF({
+      orientation: 'p',
+    });
+    var finalY = (PDF as any).lastAutoTable.finalY || 10;
+    this.carsInGarage.forEach(car => {
+      finalY = (PDF as any).lastAutoTable.finalY || 10;
+      autoTable(PDF, {
+        startY: finalY + 10,
+        head: [
+          [
+            'Type',
+            'Weight',
+            'Hull',
+            'Handling',
+            'Gear',
+            'Crew',
+            'Slots',
+            'Special Rules',
+            'Cost',
+          ],
+        ],
+        theme: 'grid',
+        body: this.formatCarToPdf(car),
+        headStyles: {
+          halign: 'center',
+        },
+        columnStyles: {
+          2: {
+            halign: 'center',
+          },
+          3: {
+            halign: 'center',
+          },
+          4: {
+            halign: 'center',
+          },
+          5: {
+            halign: 'center',
+          },
+          6: {
+            halign: 'center',
+          },
+          8: {
+            halign: 'center',
+          },
+        },
+      });
+      finalY = (PDF as any).lastAutoTable.finalY || 10;
+      autoTable(PDF, {
+        startY: finalY,
+        head: [
+          [
+            'Weapon Name',
+            'Range',
+            'Attack Dice',
+            'Special Rules',
+            'Slots',
+            'Cost',
+          ],
+        ],
+        body: this.formatWeaponsToPdf(car.weapons),
+        theme: 'grid',
+        headStyles: {
+          fillColor: [170, 170, 170],
+          textColor: [255, 255, 255],
+          halign: 'center',
+        },
+        columnStyles: {
+          2: {
+            halign: 'center',
+          },
+          4: {
+            halign: 'center',
+          },
+          5: {
+            halign: 'center',
+          },
+        },
+      });
+    });
+
+    finalY = (PDF as any).lastAutoTable.finalY || 10;
+
+    PDF.save('PDF-TEST.pdf');
+  }
+
+  formatCarToPdf(car: Vehicle) {
+    return [
+      [
+        car.model.toString(),
+        car.weight.toString(),
+        car.hullPoints.toString(),
+        car.handling.toString(),
+        car.maxGearModified.toString(),
+        car.crewModified.toString(),
+        car.buildSlots.toString(),
+        car.specialRules.map(rule => rule.name + ' ').toString(),
+        car.cost.toString(),
+      ],
+    ];
+  }
+
+  formatWeaponsToPdf(weapons) {
+    return weapons.map(weapon => {
+      return [
+        weapon.name.toString(),
+        weapon.range.toString(),
+        weapon.attack.toString(),
+        weapon.rules.toString(),
+        weapon.slots.toString(),
+        weapon.cost.toString(),
+      ];
+    });
   }
 }
