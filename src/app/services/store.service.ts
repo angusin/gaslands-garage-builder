@@ -52,6 +52,35 @@ export class StoreService {
     this.carsInGarage = cars;
   }
 
+  totalCost(): number {
+    const carsCost: number = this.carsInGarage.reduce((a, b) => a + b.cost, 0);
+    let weaponsCost: number = 0;
+    const anyWeaponExist: boolean = this.carsInGarage.some(
+      car => car.weapons.length > 0
+    );
+    if (anyWeaponExist)
+      weaponsCost = this.carsInGarage
+        .map(car => car.weapons.map(weapon => weapon.cost))
+        .reduce((acc, val) => acc.concat(val))
+        .reduce((a, b) => a + b);
+    else {
+      weaponsCost = 0;
+    }
+    let upgradesCost: number = 0;
+    const anyUpgradeExist: boolean = this.carsInGarage.some(
+      car => car.upgrades.length > 0
+    );
+    if (anyUpgradeExist)
+      upgradesCost = this.carsInGarage
+        .map(car => car.upgrades.map(upgrade => upgrade.cost))
+        .reduce((acc, val) => acc.concat(val))
+        .reduce((a, b) => a + b);
+    else {
+      upgradesCost = 0;
+    }
+    return carsCost + weaponsCost + upgradesCost;
+  }
+
   saveToLocalStorage() {
     localStorage.setItem('myGarage', JSON.stringify(this.carsInGarage));
     this.toastr.success('Garage saved.');
