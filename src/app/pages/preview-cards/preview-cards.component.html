@@ -1,0 +1,20 @@
+<button class="button is-link mr-2" routerLink="/">
+  <span class="icon">
+    <i class="fas fa-chevron-left"></i>
+  </span>
+  <span>Back to Garage</span>
+</button>
+<span tooltip="Print the cards">
+  <button class="button is-light is-link mr-2" (click)="printCards()">
+    <span class="icon">
+      <i class="fas fa-print"></i>
+    </span>
+  </button>
+</span>
+
+<div class="cards-car-wrapper" id="cardsToPrint">
+  <app-car-card-printed
+    *ngFor="let car of carsInGarage; index as i"
+    [vehicle]="car"
+  ></app-car-card-printed>
+</div>

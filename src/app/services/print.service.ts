@@ -4,6 +4,7 @@ import { StoreService } from './store.service';
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { Vehicle } from '../types/types';
+import html2canvas from 'html2canvas';
 
 @Injectable({
   providedIn: 'root',
@@ -189,6 +190,23 @@ export class PrintService {
         upgrade.slots.toString(),
         upgrade.cost.toString(),
       ];
+    });
+  }
+
+  printCards(cardsToPrint) {
+    console.log('🚀 - printCards - cardsToPrint', cardsToPrint);
+    var data = document.getElementById('cardsToPrint');
+
+    html2canvas(cardsToPrint).then(canvas => {
+      let fileWidth = 208;
+      let fileHeight = (canvas.height * fileWidth) / canvas.width;
+
+      const FILEURI = canvas.toDataURL('image/png');
+      let PDF = new jsPDF('p', 'mm', 'a4');
+      let position = 0;
+      PDF.addImage(FILEURI, 'PNG', 0, position, fileWidth, fileHeight);
+
+      PDF.save('angular-demo.pdf');
     });
   }
 }

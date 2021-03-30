@@ -43,19 +43,6 @@ export class CarCardComponent implements OnInit {
     this.store.deleteUpgradeFromCar(this.vehicle, upgradeIndex, upgrade);
   }
 
-  getWeightCharacter(weight: string): string {
-    switch (weight) {
-      case 'Lightweight':
-        return 'L';
-      case 'Middleweight':
-        return 'M';
-      case 'Heavyweight':
-        return 'H';
-      default:
-        break;
-    }
-  }
-
   checkIfSlotsComplete(itemToAddSlot?: number): boolean {
     let slotsOccupied: number =
       this.vehicle.weapons.reduce((a, b) => a + b.slots, 0) +

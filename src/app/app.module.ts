@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { CarCardComponent } from './components/car-card/car-card.component';
-import { FormBuilderComponent } from './components/form-builder/form-builder.component';
 import { CarListComponent } from './components/car-list/car-list.component';
 import { CarSelectorPageComponent } from './pages/car-selector-page/car-selector-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
@@ -18,8 +17,10 @@ import { ModalComponent } from './common/modal/modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TooltipModule } from 'ng2-tooltip-directive';
 import { TooltipOptions } from 'ng2-tooltip-directive';
+import { CarCardPrintedComponent } from './components/car-card-printed/car-card-printed.component';
 
 import { ToastrModule } from 'ngx-toastr';
+import { PreviewCardsComponent } from './pages/preview-cards/preview-cards.component';
 
 const MyDefaultTooltipOptions: TooltipOptions = {
   'hide-delay': 0,
@@ -34,13 +35,14 @@ const MyDefaultTooltipOptions: TooltipOptions = {
     HeaderComponent,
     FooterComponent,
     CarCardComponent,
-    FormBuilderComponent,
     CarListComponent,
     CarSelectorPageComponent,
     MainPageComponent,
     WeaponsListComponent,
     UpgradesListComponent,
     ModalComponent,
+    PreviewCardsComponent,
+    CarCardPrintedComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+<div class="card-wrapper" id="card">
+  <div
+    class="card-top"
+    [ngStyle]="{
+      'background-image': 'url(/assets/images/' + vehicle.id + '.jpg)'
+    }"
+  >
+    <div class="left">
+      <!--<p class="vehicle-type">{{ vehicle.model }}</p>-->
+      <h3 class="vehicle-name">{{ vehicle.model }}</h3>
+    </div>
+    <div class="right">
+      <div class="dice-box">
+        <i class="fas fa-cog fa-2x"></i>
+      </div>
+    </div>
+  </div>
+  <div class="card-stats">
+    <div class="stat-circle handling">
+      <i class="fas fa-dice-six fa-2x icon"></i>
+      <span class="text">{{ vehicle.handling }}</span>
+    </div>
+    <div class="stat-circle crew">
+      <i class="fas fa-user-friends fa-2x icon"></i>
+      <span class="text">{{ vehicle.crewModified }}</span>
+    </div>
+    <div class="stat-circle weight">
+      <i class="fas fa-weight-hanging fa-2x icon"></i>
+      <span class="text">{{ getWeightCharacter(vehicle.weight) }}</span>
+    </div>
+    <div class="stat-circle gear">
+      <i class="fas fa-cogs fa-2x icon"></i>
+      <span class="text">{{ vehicle.maxGearModified }}</span>
+    </div>
+  </div>
+  <div class="card-rules">
+    <ul>
+      <li *ngFor="let rule of vehicle.specialRules">
+        <span>{{ rule.name }}</span> - {{ rule.effects }}
+      </li>
+    </ul>
+  </div>
+  <div class="card-bottom">
+    <div
+      *ngFor="let i of [].constructor(vehicle.hullPoints)"
+      class="hull-circle"
+    ></div>
+  </div>
+</div>
