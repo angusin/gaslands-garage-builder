@@ -1,3 +1,10 @@
 i {
   cursor: pointer;
 }
+
+tr td:nth-child(1),
+tr td:nth-child(3),
+tr td:nth-child(4),
+tr td:nth-child(5) {
+  text-align: center;
+}

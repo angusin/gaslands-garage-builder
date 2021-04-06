@@ -1,0 +1,186 @@
+// Common variables
+// ********************************
+
+$unit: 8px;
+$double-unit: 16px;
+$half-unit: 4px;
+
+$header-height: $unit * 7;
+$border-radius-3: 3px;
+$border-radius-5: 5px;
+
+$colors: (
+  primary: #15b097,
+  primary-hover: #18c9ab,
+  secondary: #ff5a5f,
+  secondary-hover: #ff7075,
+  grey-white: #fff,
+  grey-lightest: #efefef,
+  grey-light: #b9bbbe,
+  grey-medium: #36393f,
+  grey-dark: #2f3135,
+  grey-darkest: #202225,
+  grey-black: #000,
+);
+
+$font-size: (
+  xsmall: 12px,
+  small: 14px,
+  medium: 16px,
+  big: 18px,
+  xbig: 22px,
+  xxbig: 32px,
+);
+
+// Backgrounds
+// ********************************
+
+.is-primary {
+  background-color: map-get($colors, primary);
+  @extend .txt-is-grey-white;
+}
+
+.is-secondary {
+  background-color: map-get($colors, secondary);
+  @extend .txt-is-grey-white;
+}
+
+.is-gray-white {
+  background-color: map-get($colors, grey-white);
+}
+
+.is-grey-lightest {
+  background-color: map-get($colors, grey-lightest);
+}
+
+.is-grey-light {
+  background-color: map-get($colors, grey-light);
+}
+
+.is-grey-medium {
+  background-color: map-get($colors, grey-medium);
+  @extend .txt-is-grey-light;
+}
+
+.is-grey-dark {
+  background-color: map-get($colors, grey-dark);
+  @extend .txt-is-grey-light;
+}
+
+.is-grey-darkest {
+  background-color: map-get($colors, grey-darkest);
+  @extend .txt-is-grey-light;
+}
+
+.is-grey-black {
+  background-color: map-get($colors, grey-black);
+  @extend .txt-is-grey-light;
+}
+
+// Font styles
+// ********************************
+
+.txt-is-primary {
+  color: map-get($colors, primary);
+}
+
+.txt-is-secondary {
+  color: map-get($colors, secondary);
+}
+
+.txt-is-grey-white {
+  color: map-get($colors, grey-white);
+}
+
+.txt-is-grey-light {
+  color: map-get($colors, grey-light);
+}
+
+.txt-is-grey-darkest {
+  color: map-get($colors, grey-darkest);
+}
+
+.is-semibold {
+  font-weight: 500;
+}
+
+.is-bold {
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('../../assets/fonts/whitneybook.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('../../assets/fonts/whitneymedium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'whitney';
+  src: url('../../assets/fonts/whitneybold.woff') format('woff');
+  font-weight: 600;
+}
+
+// Positioning, margins and paddings
+// ********************************
+
+.is-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.super-align {
+  justify-content: center;
+  align-items: center;
+}
+
+.mr-1 {
+  margin-right: $unit;
+}
+
+.ml-1 {
+  margin-left: $unit;
+}
+
+.mt-1 {
+  margin-top: $unit;
+}
+
+.mb-1 {
+  margin-bottom: $unit;
+}
+
+.pr-1 {
+  padding-right: $unit;
+}
+
+.pl-1 {
+  padding-left: $unit;
+}
+
+.pt-1 {
+  padding-top: $unit;
+}
+
+.pb-1 {
+  padding-bottom: $unit;
+}
+
+.p-1 {
+  padding: $unit;
+}
+
+.p-2 {
+  padding: $double-unit;
+}
+
+.m-1 {
+  margin: $unit;
+}

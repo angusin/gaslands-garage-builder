@@ -1,4 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,12 +14,30 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
   @Input() modalIsActive: boolean = false;
-
+  @Output() deactivateModal = new EventEmitter<boolean>();
   constructor() {}
 
   ngOnInit(): void {}
 
   toggleModal(): void {
     this.modalIsActive = !this.modalIsActive;
+  }
+
+  sendDeactivateModal() {
+    this.deactivateModal.emit(false);
+  }
+
+  @HostListener('document:keydown.escape', ['$event']) onKeydownHandler(
+    evt: KeyboardEvent
+  ) {
+    this.modalIsActive = false;
+    this.sendDeactivateModal();
+  }
+
+  @HostListener('click', ['$event'])
+  function(event: any) {
+    if (event.target.id === 'modal') {
+      this.sendDeactivateModal();
+    }
   }
 }

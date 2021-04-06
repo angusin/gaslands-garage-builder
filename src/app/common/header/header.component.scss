@@ -1,4 +1,31 @@
-.navbar-item img {
-  max-height: 56px;
-  padding: 0 10px;
+@import '../../css/variables.scss';
+
+.navbar {
+  height: $header-height;
+  align-items: center;
+  padding: 0px $double-unit;
+  justify-content: space-between;
+
+  .brand {
+    height: 100%;
+    padding: 0 $double-unit;
+
+    &:hover {
+      background-color: map-get($colors, primary-hover);
+    }
+  }
+
+  .menu {
+    height: 100%;
+
+    .item {
+      height: 100%;
+      cursor: pointer;
+      padding: 0px $double-unit;
+
+      &:hover {
+        background-color: map-get($colors, primary-hover);
+      }
+    }
+  }
 }

@@ -72,4 +72,9 @@ export class CarCardComponent implements OnInit {
   toggleUpgradeModal(): void {
     this.upgradeModalIsActive = !this.upgradeModalIsActive;
   }
+
+  deactivateModals(state) {
+    this.weaponModalIsActive = false;
+    this.upgradeModalIsActive = false;
+  }
 }

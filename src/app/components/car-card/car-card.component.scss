@@ -1,34 +1,56 @@
-$card-border-radius: 15px;
-$card-padding: 0 15px;
-$height-top: 130px;
-$height-middle: 60px;
-$height-bottom: 60px;
-$text-shadow-8px: 0px 0px 8px #000;
+@import '../../css/variables.scss';
 
-.panel-heading {
-  .build-slots {
-    display: flex;
-    flex: 1;
+$card-box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+
+.card {
+  @extend .p-2;
+  background-color: map-get($colors, grey-medium);
+  border-radius: $border-radius-5;
+  box-shadow: $card-box-shadow;
+
+  .footer {
+    @extend .mt-1;
+    justify-content: space-evenly;
+  }
+
+  hr {
+    border-color: map-get($colors, grey-light);
+    opacity: 0.2;
+  }
+
+  .item-block {
+    @extend .txt-is-grey-light;
+    @extend .p-1;
     align-items: center;
-    justify-content: flex-end;
-    font-size: 14px;
-    font-weight: 500;
-    margin-right: 8px;
+
+    .tag {
+      @extend .is-semibold;
+      font-size: map-get($font-size, small);
+      width: $double-unit + $unit;
+      margin-right: $unit;
+      background-color: map-get($colors, grey-darkest);
+      color: map-get($colors, grey-light);
+      border-radius: $border-radius-3;
+      text-align: center;
+      padding: 2px 0;
+    }
+
+    .icon {
+      width: $double-unit + $unit;
+      margin-right: $unit;
+      text-align: center;
+    }
+
+    .build-slots {
+      text-align: right;
+      font-size: map-get($font-size, xsmall);
+    }
+
+    .delete-icon {
+      text-align: end;
+      i {
+        cursor: pointer;
+      }
+    }
   }
-}
-
-.tag {
-  margin-right: 8px;
-}
-
-.delete-button {
-  flex: 1;
-  text-align: end;
-  i {
-    cursor: pointer;
-  }
-}
-
-.weapon-block {
-  padding: 10px 20px;
 }

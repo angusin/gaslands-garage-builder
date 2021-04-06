@@ -1,4 +1,45 @@
-.card {
-  max-height: 600px;
-  overflow: auto;
+@import '../../css/variables.scss';
+
+$modal-height: 600px;
+$modal-width: 400px;
+
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  .modal-content {
+    @extend .is-grey-medium;
+    width: $modal-width;
+    max-height: $modal-height;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: $border-radius-5;
+    overflow: auto;
+    z-index: 10000000;
+  }
+}
+
+.is-active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close-icon {
+  color: map-get($colors, grey-white);
+  font-size: map-get($font-size, xxbig);
+  cursor: pointer;
+  margin: $double-unit;
 }

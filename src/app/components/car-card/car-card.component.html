@@ -1,50 +1,66 @@
-<div class="panel">
-  <p class="panel-heading is-flex">
-    <span class="tag is-normal">{{ vehicle.cost }}</span>
-    {{ vehicle.model }}
-    <span class="build-slots"
+<div class="card">
+  <div class="heading is-flex super-align is-bold mb-1">
+    <h1 class="vehicle-name txt-is-grey-white">{{ vehicle.model }}</h1>
+  </div>
+
+  <div class="item-block is-flex">
+    <span class="tag">{{ vehicle.cost }}</span>
+    <span class="icon"><i class="fas fa-car"></i></span>
+    {{ vehicle.weight }}
+    <span class="build-slots flex-1 mr-1 is-bold"
       >{{ getSlotsFilled() }}/{{ vehicle.buildSlots }}</span
     >
-    <span class="delete-car-button"
+    <span class="delete-icon"
       ><i class="far fa-trash-alt" (click)="deleteCar()"></i
     ></span>
-  </p>
+  </div>
+
+  <hr *ngIf="vehicle.weapons.length > 0 || vehicle.upgrades.length > 0" />
+
   <div
-    class="panel-block weapon-block is-flex"
+    class="item-block is-flex"
     *ngFor="let weapon of vehicle.weapons; index as i"
   >
-    <span class="tag is-normal">{{ weapon.cost }}</span>
-    <span class="panel-icon"><i class="fas fa-bomb"></i></span>
+    <span class="tag">{{ weapon.cost }}</span>
+    <span class="icon"><i class="fas fa-bomb"></i></span>
     {{ weapon.name }}
-    <span class="delete-button"
+    <span class="build-slots flex-1 mr-1">{{ weapon.slots }}</span>
+    <span class="delete-icon"
       ><i class="far fa-trash-alt" (click)="deleteWeapon(i)"></i
     ></span>
   </div>
   <div
-    class="panel-block weapon-block is-flex"
+    class="item-block is-flex"
     *ngFor="let upgrade of vehicle.upgrades; index as i"
   >
-    <span class="tag is-normal">{{ upgrade.cost }}</span>
-    <span class="panel-icon"><i class="fas fa-angle-double-up"></i></span>
+    <span class="tag">{{ upgrade.cost }}</span>
+    <span class="icon"><i class="fas fa-angle-double-up"></i></span>
     {{ upgrade.name }}
-    <span class="delete-button"
+    <span class="build-slots flex-1 mr-1">{{ upgrade.slots }}</span>
+    <span class="delete-icon"
       ><i class="far fa-trash-alt" (click)="deleteUpgrade(i, upgrade)"></i
     ></span>
   </div>
-  <div class="panel-block is-flex is-justify-content-space-evenly">
-    <button class="button is-link is-small" (click)="toggleWeaponModal()">
+  <div class="footer is-flex">
+    <button class="btn is-primary" (click)="toggleWeaponModal()">
       Add weapon
     </button>
-    <button class="button is-link is-small" (click)="toggleUpgradeModal()">
+    <button class="btn is-primary" (click)="toggleUpgradeModal()">
       Add upgrade
     </button>
   </div>
 </div>
 
-<app-modal [modalIsActive]="weaponModalIsActive">
+<app-modal
+  [modalIsActive]="weaponModalIsActive"
+  (deactivateModal)="deactivateModals($event)"
+>
   <app-weapons-list (addWeapon)="addWeaponToCar($event)"></app-weapons-list>
 </app-modal>
 
-<app-modal [modalIsActive]="upgradeModalIsActive">
+<app-modal
+  [modalIsActive]="upgradeModalIsActive"
+  (deactivateModal)="deactivateModals($event)"
+>
   <app-upgrades-list (addUpgrade)="addUpgradeToCar($event)"></app-upgrades-list>
 </app-modal>

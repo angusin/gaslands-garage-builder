@@ -37,6 +37,7 @@
     "ng2-tooltip-directive": "^2.9.22",
     "ngx-easy-table": "^14.0.0",
     "ngx-toastr": "^13.2.1",
+    "normalize.css": "^8.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
