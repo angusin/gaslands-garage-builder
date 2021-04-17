@@ -1,5 +1,8 @@
 @import './app/css/variables.scss';
 
+// Generic
+// ********************************
+
 body {
   margin: 0;
   margin: 0;
@@ -15,11 +18,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-attachment: fixed;
   height: 100vh;
 }
-
-// Generic Rules
-// ********************************
 
 body,
 p,
@@ -79,6 +80,7 @@ h3 {
 
 table {
   width: 100%;
+
   td {
     @extend .pt-1;
     @extend .pb-1;
