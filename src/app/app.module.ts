@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TableModule } from 'ngx-easy-table';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,34 +29,27 @@ const MyDefaultTooltipOptions: TooltipOptions = {
   'tooltip-class': 'tooltip',
 };
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    CarCardComponent,
-    CarListComponent,
-    CarSelectorPageComponent,
-    MainPageComponent,
-    WeaponsListComponent,
-    UpgradesListComponent,
-    ModalComponent,
-    PreviewCardsComponent,
-    CarCardPrintedComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    TableModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot({
-      timeOut: 2000,
-      positionClass: 'toast-bottom-center',
-    }),
-    TooltipModule.forRoot(MyDefaultTooltipOptions as TooltipOptions),
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        CarCardComponent,
+        CarListComponent,
+        CarSelectorPageComponent,
+        MainPageComponent,
+        WeaponsListComponent,
+        UpgradesListComponent,
+        ModalComponent,
+        PreviewCardsComponent,
+        CarCardPrintedComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        TableModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot({
+            timeOut: 2000,
+            positionClass: 'toast-bottom-center',
+        }),
+        TooltipModule.forRoot(MyDefaultTooltipOptions as TooltipOptions)], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
