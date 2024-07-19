@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gaslands-garage-builder:build"
+            "buildTarget": "gaslands-garage-builder:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gaslands-garage-builder:build:production"
+              "buildTarget": "gaslands-garage-builder:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gaslands-garage-builder:build"
+            "buildTarget": "gaslands-garage-builder:build"
           }
         },
         "test": {
