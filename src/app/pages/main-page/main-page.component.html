@@ -5,7 +5,7 @@
     </span>
     <span>Add new vehicle</span>
   </button>
-  <span tooltip="Save your garage">
+  <span>
     <button
       class="btn is-grey-medium mini-button"
       (click)="saveToLocalStorage()"
@@ -15,7 +15,7 @@
       </span>
     </button>
   </span>
-  <span tooltip="Load your saved garage">
+  <span >
     <button
       class="btn is-grey-medium mini-button"
       (click)="getFromLocalStorage()"
@@ -25,7 +25,7 @@
       </span>
     </button>
   </span>
-  <span tooltip="Delete everything">
+  <span>
     <button class="btn is-grey-medium mini-button" (click)="deleteEverything()">
       <span class="icon">
         <i class="far fa-trash-alt"></i>
@@ -33,7 +33,7 @@
     </button>
   </span>
   <div class="info">
-    <span tooltip="Preview vehicle cards">
+    <span >
       <button
         class="btn is-grey-medium mini-button"
         routerLink="/preview-cards"
@@ -43,7 +43,7 @@
         </span>
       </button>
     </span>
-    <span tooltip="Print only the list">
+    <span >
       <button class="btn is-grey-medium mini-button" (click)="printPdf()">
         <span class="icon">
           <i class="fas fa-print"></i>

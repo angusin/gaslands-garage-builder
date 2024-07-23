@@ -15,19 +15,11 @@ import { WeaponsListComponent } from './components/weapons-list/weapons-list.com
 import { UpgradesListComponent } from './components/upgrades-list/upgrades-list.component';
 import { ModalComponent } from './common/modal/modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TooltipModule } from 'ng2-tooltip-directive';
-import { TooltipOptions } from 'ng2-tooltip-directive';
 import { CarCardPrintedComponent } from './components/car-card-printed/car-card-printed.component';
 
 import { ToastrModule } from 'ngx-toastr';
 import { PreviewCardsComponent } from './pages/preview-cards/preview-cards.component';
 
-const MyDefaultTooltipOptions: TooltipOptions = {
-  'hide-delay': 0,
-  autoPlacement: true,
-  theme: 'light',
-  'tooltip-class': 'tooltip',
-};
 
 @NgModule({ declarations: [
         AppComponent,
@@ -51,5 +43,5 @@ const MyDefaultTooltipOptions: TooltipOptions = {
             timeOut: 2000,
             positionClass: 'toast-bottom-center',
         }),
-        TooltipModule.forRoot(MyDefaultTooltipOptions as TooltipOptions)], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        ], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
